@@ -3,16 +3,28 @@
 html{
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
-  background: #abbaab;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #6e6e6e, #3a3a3a);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #6e6e6e, #3a3a3a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #1d1d1d;  /* fallback for old browsers */
   width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 *{
   --font-nofocus: gray;
-  --font-primary: rgb(111, 180, 226);
+  --font-primary: rgb(111, 226, 201);
   --font-secondary: rgb(146, 255, 132);
-  overflow: hidden;
+}
+
+
+@media (max-width: 650px)
+{
+  html{
+    overflow-x: auto;
+  }
+
+  *{
+    overflow-x: hidden;
+  }
+
+
 }

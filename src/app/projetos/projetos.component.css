@@ -1,0 +1,23 @@
+.cards-wrapper{
+  margin-top: 2rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.card{
+  height: 15rem;
+  width: 10rem;
+  background: rgba(60, 60, 60, 0.25);
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba(44, 44, 44, 0.482);
+}
+
+.cards-wrapper:last-child{
+  padding-bottom: 1rem;
+}

@@ -1,7 +1,7 @@
 .nav-wrapper{
-  background: #232526;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #2d2f30, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #2d2f30, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #161718;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #161718, #141515);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #161718, #141515); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   height: 1.2rem;
   padding-top:.4rem;
   padding-bottom:.4rem;
