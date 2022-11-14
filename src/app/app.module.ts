@@ -6,6 +6,7 @@ import { SobreComponent } from './sobre/sobre.component';
 import { HomeComponent } from './home/home.component';
 import { ProjetosComponent } from './projetos/projetos.component';
 import { ContatoComponent } from './contato/contato.component';
+import { FooterComponent } from './footer/footer.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -20,7 +21,8 @@ const routes: Routes = [
     SobreComponent,
     HomeComponent,
     ProjetosComponent,
-    ContatoComponent
+    ContatoComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
