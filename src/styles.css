@@ -4,9 +4,13 @@
 html{
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
-  background: #1d1d1d;  /* fallback for old browsers */
   overflow-x: hidden;
   overflow-y: hidden;
+}
+
+body{
+  background: #1d1d1d;  /* fallback for old browsers */
+
 }
 
 *{
@@ -17,7 +21,7 @@ html{
 }
 
 
-@media (max-width: 650px)
+@media (max-width: 850px)
 {
   html{
     overflow-x: auto;
