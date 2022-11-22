@@ -9,7 +9,7 @@ export class AppComponent {
 
 
   ngOnInit() {
-    alert('Portfólio em Construção... :)')
+    // alert('Portfólio em Construção... :)')
   }
 
 

@@ -1,0 +1,12 @@
+<div class="conversor-wrapper animate__animated animate__fadeIn">
+  <div class="conversor">
+    <form>
+      <img style="cursor: pointer;" src="assets/help.svg" class="animate__animated animate__bounce animate__infinite" (click)="help()">
+      <input type="text" placeholder="insira o link">
+      <a (click)="convert()">Converter</a>
+    </form>
+  </div>
+  <div class="resultado">
+  </div>
+</div>
+<script>iFrameResize({ log: false, minHeight: 400 }, '#widgetv2Api')</script>

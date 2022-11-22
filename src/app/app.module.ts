@@ -7,12 +7,14 @@ import { HomeComponent } from './home/home.component';
 import { ProjetosComponent } from './projetos/projetos.component';
 import { ContatoComponent } from './contato/contato.component';
 import { FooterComponent } from './footer/footer.component';
+import { ConversorComponent } from './conversor/conversor.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'sobre', component: SobreComponent},
   {path: 'projetos', component: ProjetosComponent},
-  {path: 'contato', component: ContatoComponent}
+  {path: 'contato', component: ContatoComponent},
+  {path: 'conversor', component: ConversorComponent}
 ]
 
 @NgModule({
@@ -22,7 +24,8 @@ const routes: Routes = [
     HomeComponent,
     ProjetosComponent,
     ContatoComponent,
-    FooterComponent
+    FooterComponent,
+    ConversorComponent
   ],
   imports: [
     BrowserModule,
