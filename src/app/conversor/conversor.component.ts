@@ -12,8 +12,7 @@ export class ConversorComponent implements OnInit {
 
   ngOnInit(): void {
     const disableNav = document.querySelector('.nav-wrapper') as HTMLElement
-    disableNav.style.display = 'none'
-
+    disableNav.style.visibility = 'hidden'
   }
 
   convert(){
@@ -30,6 +29,7 @@ export class ConversorComponent implements OnInit {
       '\n_______________________________________________________________' +
       '\nYouTube, SoundCloud, Facebook, Twitter, Instagram,\n TikTok, Vimeo, Dailymotion, VK, e AOL Video URL')
     }
+
 }
 
 

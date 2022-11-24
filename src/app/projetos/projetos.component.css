@@ -35,11 +35,6 @@
   box-shadow: 5px 5px 15px 5px #00000096;
 }
 
-.card:nth-child(1){
-  background: url('/assets/conv.png');
-  background-position: 70%;
-}
-
 .card:last-child{
   margin-bottom: 1.8rem;
 }
