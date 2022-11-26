@@ -22,7 +22,7 @@
 
 .card{
   margin-top: 1.8rem;
-  width: 12rem;
+  width: 20vw;
   height: 65vh;
   background-color: rgba(255, 255, 255, 0.127);
   border-radius: 10px;
@@ -55,16 +55,11 @@
 }
 
 h1{
-  font-size:.8rem;
-  padding-left:.4rem;
-  transition: all 0.4s;
+  font-size:.7rem;
+  padding-left:.8rem;
   cursor: default;
 }
 
-h1:hover{
-  padding-left: .8rem;
-  font-family: 'Montserrat', sans-serif;
-}
 
 p{
   font-size: .6rem;

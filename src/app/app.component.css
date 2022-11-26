@@ -25,14 +25,14 @@ img{
 a{
   text-decoration: none;
   transition: all .4s;
-  color: #c5c5c5d3;
+  color: #cfcfcfc9;
   opacity: .6;
 }
 a:hover{
   opacity: 1;
-  color: rgba(243, 243, 243, 0.904);
+  color: #ffffff;
   padding-top: .3rem;
-  border-top: 2px solid #bce211e3;
+  border-top: 2px solid #326972;
 }
 
 

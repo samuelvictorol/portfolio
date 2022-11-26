@@ -32,7 +32,7 @@ img{
 }
 
 img:hover{
-  border: 1px solid #585858e3;
+  border: 1px solid #00ffd5;
   filter: grayscale(0);
   filter: saturate(2);
   padding: .2rem .5rem;

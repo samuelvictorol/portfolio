@@ -18,6 +18,7 @@
   </div>
   <div class="conversor">
     <form style="z-index:99;">
+      <img style="cursor: pointer;" src="assets/close.svg" class="close-btn animate__animated animate__fadeInDown" *ngIf="showCloseBtn" (click)="closeResult()">
       <img style="cursor: pointer;" src="assets/help.svg" class="animate__animated animate__bounce animate__infinite" (click)="help()">
       <input class="animate__animated animate__headShake" type="text" placeholder="insira o link">
       <a (click)="convert()">Converter</a>
