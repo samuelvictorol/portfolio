@@ -73,7 +73,7 @@ h1{
   /* text-shadow: #ffffff 2px 1px 0; */
   border-radius: 14px;
   padding: 1rem 1rem;
-  background: -webkit-linear-gradient(#00e24be3,#9511e2e3);
+  background: -webkit-linear-gradient(#00e24be3,#a200ffe3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all .4s;

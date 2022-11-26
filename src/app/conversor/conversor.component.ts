@@ -15,9 +15,13 @@ export class ConversorComponent implements OnInit {
     const disableNav = document.querySelector('.nav-wrapper') as HTMLElement
     disableNav.style.visibility = 'hidden'
     this.showCloseBtn = false
+      setTimeout(() =>{
+        this.help()
+      }, 2000)
   }
 
-  convert(){
+  convert(ev: Event) {
+    ev.preventDefault()
     this.linkInput = document.querySelector('input')?.value
     if(!this.linkInput?.includes('.com')){
       alert('Digite um link válido!')
@@ -33,9 +37,12 @@ export class ConversorComponent implements OnInit {
     }
 
     help(){
-      alert('Insira o link do vídeo e clique em converter. Suporta:' +
-      '\n_______________________________________________________________' +
-      '\nYouTube, SoundCloud, Facebook, Twitter, Instagram,\n TikTok, Vimeo, Dailymotion, VK, e AOL Video URL')
+      alert('Copie o link do vídeo que deseja, cole no campo e clique em converter.' +
+      '\nSuporta links de vídeos do(a):\nYouTube - SoundCloud - Facebook - Twitter - Instagram\nTikTok - Vimeo - Dailymotion - VK - AOL Video URL' +
+      '\n____________________________________________________________________' +
+      '\nFeito por:\nSamuel Victor - samuelvictorol.github.io/portfolio' +
+      '\nCréditos e API Disponível em:\ngithub.com/matthew-asuncion/Fast-YouTube-to-MP3-Converter-API'
+      )
     }
 
     closeResult(){

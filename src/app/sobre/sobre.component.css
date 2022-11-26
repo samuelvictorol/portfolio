@@ -2,8 +2,14 @@
   width: 100vw;
   height: 100vh;
   background: #000000;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to left, #006eff6b, #05000865);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #0d4da038, #2a0f3bd2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
+}
+
+p{
+  margin: 0;
+  padding-top: 5rem;
+  color: #fff;
 }
