@@ -4,6 +4,7 @@
 }
 
 .home-wrapper{
+  position: relative;
   /* background-color: #5f8b8b; */
   background: #00c3ff;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #ffff1c, #00c3ff);  /* Chrome 10-25, Safari 5.1-6 */
@@ -43,14 +44,14 @@
 }
 
 .title{
-  padding-top: 5rem;
+  padding-top: 18vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 3rem;
+  gap: 2rem;
   -webkit-touch-callout: none;  /* iPhone OS, Safari */
     -webkit-user-select: none;    /* Chrome, Safari 3 */
     -khtml-user-select: none;     /* Safari 2 */
@@ -77,16 +78,18 @@ h1{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all .4s;
+
 }
 
 h1:hover{
   background: -webkit-linear-gradient(#9511e2e3 , #00e24be3);
   -webkit-background-clip: text;
-  letter-spacing: .1rem;
+  letter-spacing: .08rem;
   border-radius: 45px;
 }
 
 h2{
+  padding: 0 1rem;
   font-size: 3rem;
   color: #5c3ea1;
   font-family: 'Satisfy', cursive;
@@ -95,16 +98,21 @@ h2{
   text-shadow: 2px 2px 2px #28966D;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 850px) {
   .title{
-    gap: 3rem;
+    gap: 2rem;
   }
 
   h1{
-    font-size: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70vw;
+    font-size: 20vw;
     z-index: 100;
   }
-
+  h1:hover{
+    letter-spacing: 0;
+  }
   h2{
     font-size: 1.2rem;
     height:  4rem;

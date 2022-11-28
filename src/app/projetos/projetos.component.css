@@ -3,9 +3,7 @@
   height: 100vh;
   background: #aa4b6b;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #202020, #6b6b83, #0200168c);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #1b1616, #505068ab, #0200168c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
+  background: linear-gradient(to right, #000000, #3f3f3fb0, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .cards-wrapper{
@@ -36,7 +34,7 @@
   border: 1px solid #00ffd5 ;
   cursor: pointer;
   -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  box-shadow: 0px 12px 13px -7px #000000, 5px 5px 15px 5px rgba(31, 31, 31, 0.719);
 }
 
 

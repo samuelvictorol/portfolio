@@ -8,6 +8,7 @@ import { ProjetosComponent } from './projetos/projetos.component';
 import { ContatoComponent } from './contato/contato.component';
 import { FooterComponent } from './footer/footer.component';
 import { ConversorComponent } from './conversor/conversor.component';
+import { FooterMobileComponent } from './footer-mobile/footer-mobile.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -25,7 +26,8 @@ const routes: Routes = [
     ProjetosComponent,
     ContatoComponent,
     FooterComponent,
-    ConversorComponent
+    ConversorComponent,
+    FooterMobileComponent
   ],
   imports: [
     BrowserModule,
