@@ -1,4 +1,4 @@
-<div class="conversor-wrapper animate__animated animate__fadeIn">
+  <div class="conversor-wrapper animate__animated animate__fadeIn">
   <div class="wrapper">
     <div><span class="dot"></span></div>
     <div><span class="dot"></span></div>
@@ -17,11 +17,12 @@
     <div><span class="dot"></span></div>
   </div>
   <div class="conversor">
+    <img style="cursor: pointer;" src="assets/close.svg" class="close-btn animate__animated animate__fadeInDown" *ngIf="showCloseBtn" (click)="closeResult()">
     <form style="z-index:99;">
-      <img style="cursor: pointer;" src="assets/close.svg" class="close-btn animate__animated animate__fadeInDown" *ngIf="showCloseBtn" (click)="closeResult()">
-      <img style="cursor: pointer;" src="assets/help.svg" class="animate__animated animate__bounce animate__infinite" (click)="help()">
+      <img id="help" title="Clique aqui para aprender como usar" style="cursor: pointer;" src="assets/help.svg" class="animate__animated animate__bounce animate__infinite" (click)="help()">
       <input (keydown.enter)="convert($event)" class="animate__animated animate__headShake" type="text" placeholder="cole aqui o link do vídeo . . .">
       <a (click)="convert($event)">Converter</a>
+      <p>Feito por:⠀ <a id="eu-a" routerLink="">Samuel Victor</a></p>
     </form>
   </div>
   <div class="resultado">

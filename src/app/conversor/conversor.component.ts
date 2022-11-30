@@ -14,10 +14,6 @@ export class ConversorComponent implements OnInit {
   ngOnInit(): void {
     const disableNav = document.querySelector('.nav-wrapper') as HTMLElement
     disableNav.style.visibility = 'hidden'
-    this.showCloseBtn = false
-      setTimeout(() =>{
-        this.help()
-      }, 2000)
   }
 
   convert(ev: Event) {
@@ -27,13 +23,14 @@ export class ConversorComponent implements OnInit {
       alert('Digite um link válido!')
       return
     }
-    const element = document.querySelector('.resultado') as HTMLElement
+    const resultado = document.querySelector('.resultado') as HTMLElement
     const bcWrapper = document.querySelector('.wrapper') as HTMLElement
     bcWrapper.style.cssText = 'filter: blur(8px);'
-    element.style.cssText = 'visibility: visible;'
-    element.innerHTML =  `<iframe id="widgetv2Api" src="https://convert2mp3s.com/api/widgetv2?url=${this.linkInput}"
-    width="100%" height="100%" allowtransparency="true" style="border:none, border-radius: 10px;"></iframe>`
+    resultado.style.cssText = 'visibility: visible;'
+    const help = document.querySelector('#help') as HTMLElement
+    help.style.cssText = 'visibility: hidden'
     this.showCloseBtn = true
+    resultado.innerHTML =  `<iframe id="widgetApi" src="https://convert2mp3s.com/api/widget?url=${this.linkInput}" width="100%" height="100%" allowtransparency="true" scrolling="yes" style="z-index:50;  border:none"></iframe>`
     }
 
     help(){
@@ -55,6 +52,8 @@ export class ConversorComponent implements OnInit {
       if(element.parentNode){
         element.parentNode.removeChild(element);
       }
+      const help = document.querySelector('#help') as HTMLElement
+      help.style.cssText = 'visibility: visible'
     }
 
 }

@@ -25,12 +25,14 @@ img{
 a{
   text-decoration: none;
   transition: all .4s;
-  color: #cfcfcfc9;
+  color: #97a397;
   opacity: .6;
 }
 a:hover{
   opacity: 1;
-  color: #ffffff;
+  background: -webkit-linear-gradient(#00ffd5d8,#e7e3e3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   padding-top: .3rem;
   border-top: 2px solid #00ffd5;
 }
@@ -42,6 +44,7 @@ a:hover{
     gap:.2rem;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+    height:2rem;
   }
   .a-wrapper{
     margin: 0 auto;
@@ -52,6 +55,14 @@ a:hover{
     display: block;
     width: 5rem;
     height: 1.2rem;
+    transition: all .4s;
+    z-index: 999;
+  }
+  img:hover{
+    border-bottom: 2px solid #db2562;
+    filter: invert(100%);
+    margin-top: 10%;
+    padding-bottom: 2vh;
   }
   a{
     display: none;

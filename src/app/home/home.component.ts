@@ -11,8 +11,9 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    const enableNav = document.querySelector('.nav-wrapper') as HTMLElement
-    enableNav.style.display = 'default'
+    const disableNav = document.querySelector('.nav-wrapper') as HTMLElement
+    disableNav.style.visibility = 'visible'
+
   }
 
   changeH2(){

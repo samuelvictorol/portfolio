@@ -9,10 +9,6 @@ export class AppComponent {
 
 
   ngOnInit() {
-    setTimeout(() => {
-      alert('Portfólio em Construção... :)')
-
-    }, 1200)
   }
 
 
