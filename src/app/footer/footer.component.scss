@@ -23,7 +23,7 @@
     transform: rotate(0deg);
 }
 
-@media (width <= 1255px) {  
+@media (max-width: 1250px) {  
     .footer-wrapper {
         display: none;
     }
