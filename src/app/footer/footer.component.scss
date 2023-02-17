@@ -1,0 +1,30 @@
+.footer-wrapper {
+    position: absolute;
+    bottom: 5vh;
+    left: 0;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    justify-content: center;
+    z-index: 99;
+}
+
+#logo-footer {
+    width: 5rem;
+    cursor: pointer;
+    z-index: 99;
+    transform: rotate(90deg);
+    transition: all .4s;
+}
+
+#logo-footer:hover {
+    transform: rotate(0deg);
+}
+
+@media (width <= 1250px) {  
+    .footer-wrapper {
+        display: none;
+    }
+}

@@ -1,0 +1,21 @@
+<div class="nav-wrapper animate__animated animate__backInDown">
+  <a (mouseenter)="mouseIn('home')" routerLink="home">Home</a>
+  <a (mouseenter)="mouseIn('portfolio')" routerLink="portfolio">Portfólio</a>
+  <a (click)="darkMode()"><img class="darkmode-btn" src="assets/darkmode.svg" alt=""></a>
+  <a (mouseenter)="mouseIn('sobre')" routerLink="sobre">Sobre</a>
+  <a (mouseenter)="mouseIn('contato')" routerLink="contato">Contato</a>
+</div>
+
+<div class="trace-wrapper" (click)="responsiveNav()">
+  <div class="trace"></div>
+  <div class="trace"></div>
+  <div class="trace"></div>
+</div>
+
+<div class="nav-responsive">
+  <a (click)="darkMode()"><img class="darkmode-btn" src="assets/darkmode.svg" alt=""></a>
+  <a class="nav-link-responsive" (click)="minimizeNavResponsive()" routerLink="home">Home</a>
+  <a class="nav-link-responsive" (click)="minimizeNavResponsive()" routerLink="portfolio">Portfólio</a>
+  <a class="nav-link-responsive" (click)="minimizeNavResponsive()" routerLink="sobre">Sobre</a>
+  <a class="nav-link-responsive" (click)="minimizeNavResponsive()" routerLink="contato">Contato</a>
+</div>

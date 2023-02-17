@@ -1,0 +1,101 @@
+.contato-wrapper {
+    width: 100vw;
+    height: 100vh;
+    background: #fffbd5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #b20a2c, #fffbd5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #b20a2c, #fffbd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8vh;
+}
+
+.text-contact {
+    padding-top: 20vh;
+    width: 80vw;
+    height: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+}
+
+.h1-contact {
+    font-family: 'Satisfy';
+    font-size: 5rem;
+    margin: 0;
+    text-align: center;
+}
+
+.h2-contact {
+    text-align: center;
+    font-size: 2vh;
+    opacity: .4;
+}
+
+.contact-form {
+    height: 70vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+}
+
+input, textarea {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px dashed black;
+    text-decoration: none;
+    background: rgba( 255, 255, 255, 0.25 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transition: all .4s;
+    height: 8vh;
+    font-size: 1.5rem;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #fcf9f9;
+    opacity: .6;
+}
+
+textarea {
+    padding-top: 1vh;
+    min-width: 80vw;
+    min-height: 20vh;
+    max-width: 80vw;
+    max-height: 20vh;
+}
+
+input:focus, textarea:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    border-radius: 8px;
+    padding-left: 1rem;
+}
+
+#btn-submit {
+    background-color: #bcbcbc;
+    border: none;
+    border-radius: 8px;
+    height: 8vh;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+#btn-submit:hover {
+    background-color: #e3e3e3;
+}
+
+@media (width <= 450px) {
+    .h1-contact  {
+        font-size: 4rem;
+    }
+}
