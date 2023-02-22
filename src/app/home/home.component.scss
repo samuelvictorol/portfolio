@@ -7,12 +7,9 @@
   flex-direction: row;
   justify-content: space-around;
   align-self: center;
-  // background: #355C7D;  /* fallback for old browsers */
-  // background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
-  // background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: #A1FFCE;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #F2F2F2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #c0c0c0);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #EAEAEA, #DBDBDB, #c0c0c0, #F2F2F2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
 }
 
@@ -21,7 +18,7 @@
 }
 
 h1 {
-  font-family: 'Satisfy';
+  font-family: 'Gloock', serif;
   font-size: 9rem;
   margin: 0;
   padding-top: 5rem;
@@ -30,7 +27,7 @@ h1 {
 h2 {
   font-family: 'Babylonica';
   font-size: 6rem;
-  color: #afafaf;
+  color: #8a8a8a;
 }
 
 #home-img {
@@ -39,7 +36,7 @@ h2 {
   filter: brightness(0);
 }
 
-@media (width <= 1200px) {  
+@media (max-width: 1200px) {  
   .home-wrapper {
     height: 100vh;
     padding-top: 0;
@@ -48,20 +45,21 @@ h2 {
 
   h1 {
     padding-top: 1rem;
-    font-size: 4rem;
+    font-family: 'Gloock', serif;
+    font-size: 3rem;
   }
   h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .image-wrapper {
     position: absolute;
-    bottom: -10vh;
-    right: 0vw;
+    bottom: -5vh;
+    right: -2vw;
   }
 
   #home-img {
-    height: 70vh;
+    height: 60vh;
     width: 85vw;
     border-radius: 0;
   }

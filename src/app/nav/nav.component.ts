@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.scss']
 })
+
 export class NavComponent {
 
   toggleDarkMode = false
@@ -23,8 +23,33 @@ export class NavComponent {
     }
   }
 
+  cleanMargin(){
+    const home = document.querySelector('#home') as HTMLElement
+    const portfolio = document.querySelector('#portfolio') as HTMLElement
+    const sobre = document.querySelector('#sobre') as HTMLElement
+    const contato = document.querySelector('#contato') as HTMLElement
+    home.classList.remove('a-selected')
+    portfolio.classList.remove('a-selected')
+    sobre.classList.remove('a-selected')
+    contato.classList.remove('a-selected')
+  }
+
   mouseIn(rotaString: string) {
-      this.router.navigate([rotaString])
+    this.cleanMargin()
+    if(rotaString === 'home') {
+      const home = document.querySelector('#home') as HTMLElement
+      home.classList.add('a-selected')
+    } else if(rotaString === 'portfolio'){
+      const portfolio = document.querySelector('#portfolio') as HTMLElement
+      portfolio.classList.add('a-selected')
+    } else if(rotaString === 'sobre') {
+      const sobre = document.querySelector('#sobre') as HTMLElement
+      sobre.classList.add('a-selected')
+    } else {
+      const contato = document.querySelector('#contato') as HTMLElement
+      contato.classList.add('a-selected')
+    }
+    this.router.navigate([rotaString])
   }
 
   responsiveNav() {

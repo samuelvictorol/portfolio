@@ -17,10 +17,10 @@ a {
   text-decoration: none;
   font-size: 1.5rem;
   transition: all 0.1s;
-  cursor: pointer;
+  cursor: none;
 }
 
-a:hover {
+.a-selected {
   padding-bottom: .4rem;
   border-bottom: 2px solid #3a3a3a;
 }
@@ -28,11 +28,7 @@ a:hover {
 .darkmode-btn {
   width: 2rem;
   height: 2rem;
-  transition: all .4s;
-}
-
-.darkmode-btn:hover {
-  filter: drop-shadow(0 6mm 3mm rgb(0, 0, 0));
+  cursor: pointer;
 }
 
 .trace-wrapper {

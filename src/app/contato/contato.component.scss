@@ -1,19 +1,21 @@
 .contato-wrapper {
     width: 100vw;
-    height: 90vh;
-    background: #fffbd5;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #b20a2c, #fffbd5);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #b20a2c, #fffbd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    background: #ECE9E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     gap: 8vh;
 }
 
 .text-contact {
     padding-top: 20vh;
     width: 80vw;
-    height: 5vh;
+    height: 10vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,7 +24,7 @@
 }
 
 .h1-contact {
-    font-family: 'Satisfy';
+    font-family: 'Gloock', serif;
     font-size: 5rem;
     margin: 0;
     text-align: center;
@@ -32,6 +34,7 @@
     text-align: center;
     font-size: 2vh;
     opacity: .4;
+    margin-bottom: 6vh;
 }
 
 .contact-form {
@@ -54,15 +57,16 @@ input, textarea {
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 1px solid rgb(0, 0, 0);
     transition: all .4s;
     height: 8vh;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 input::placeholder, textarea::placeholder {
-    color: #fcf9f9;
-    opacity: .6;
+    color: #292929;
+    opacity: .4;
+    padding-left: 1vw;
 }
 
 textarea {
@@ -75,27 +79,41 @@ textarea {
 
 input:focus, textarea:focus {
     box-shadow: 0 0 0 0;
-    border: 0 none;
+    border: 2px solid rgba(0, 0, 0);
     outline: 0;
     border-radius: 8px;
     padding-left: 1rem;
 }
 
 #btn-submit {
-    background-color: #bcbcbc;
     border: none;
     border-radius: 8px;
     height: 8vh;
+    width: 100%;
     cursor: pointer;
+    background-color: #6b6b6b;
     transition: all .2s;
+    color: #fff;
 }
 
 #btn-submit:hover {
-    background-color: #e3e3e3;
+    background-color: #4e4e4e;
+    color: #979797;
 }
 
-@media (width <= 450px) {
+@media (max-width: 450px) {
+    .contato-wrapper {
+        height: 110vh;
+    }
+    .contact-form {
+        margin-top: 4vh;
+        margin-bottom: 10vh;
+    }
     .h1-contact  {
         font-size: 4rem;
+    }
+    #btn-submit {
+        background-color: #e3e3e3;
+        opacity: 1;
     }
 }

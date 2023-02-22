@@ -1,0 +1,5 @@
+npm install -g angular-cli-ghpages
+
+ng build --configuration production --base-href "https://samuelvictorol.github.io/portfolio/"
+
+ngh --dir dist/portfolio

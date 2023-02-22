@@ -1,9 +1,9 @@
 <div class="nav-wrapper animate__animated animate__backInDown">
-  <a (mouseenter)="mouseIn('home')" routerLink="home">Home</a>
-  <a (mouseenter)="mouseIn('portfolio')" routerLink="portfolio">Portfólio</a>
+  <a id="home" (mouseenter)="mouseIn('home')" routerLink="home">Home</a>
+  <a id="portfolio" (mouseenter)="mouseIn('portfolio')" routerLink="portfolio">Portfólio</a>
   <a (click)="darkMode()"><img class="darkmode-btn" src="assets/darkmode.svg" alt=""></a>
-  <a (mouseenter)="mouseIn('sobre')" routerLink="sobre">Sobre</a>
-  <a (mouseenter)="mouseIn('contato')" routerLink="contato">Contato</a>
+  <a id="sobre" (mouseenter)="mouseIn('sobre')" routerLink="sobre">Sobre</a>
+  <a id="contato" (mouseenter)="mouseIn('contato')" routerLink="contato">Contato</a>
 </div>
 
 <div class="trace-wrapper" (click)="responsiveNav()">
