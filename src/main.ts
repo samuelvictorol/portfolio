@@ -8,4 +8,4 @@ platformBrowserDynamic().bootstrapModule(AppModule)
 
 // ...
 
-alert('Em construção :)')
+// alert('Em construção :)')

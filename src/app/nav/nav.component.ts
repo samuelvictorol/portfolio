@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class NavComponent {
 
   toggleDarkMode = false
-  toggleResposiveNav = false
+  toggleResposiveNav = true
 
   constructor (private router: Router) {}
 

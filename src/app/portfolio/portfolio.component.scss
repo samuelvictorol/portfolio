@@ -1,9 +1,67 @@
 .portfolio-wrapper {
   width: 100vw;
-  height: 100vh;
-  min-height: calc(100vh - var(--nav-height));
-  background: #ECE9E6;
-
+  height: 100%;
+  padding-top: var(--nav-height);
+  color: white;
 }
 
+.cards-wrapper {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  margin-top:5vh;
+  flex-wrap: wrap;
+}
 
+.card {
+  position: relative;
+  background-color: rgb(38, 62, 63);
+  width: 18vw;
+  height: 40vh;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.card-text {
+  position: absolute;
+  bottom: 1vh;
+  left: .5vw;
+}
+
+h1 {
+  font-size: 2.4vh;
+}
+
+p{
+  width: 17.5vw;
+  word-wrap: break-word;
+}
+
+@media (max-width: 1200px) {  
+  html {
+    background-color: #ECE9E6;
+  }
+  .portfolio-wrapper {
+    width: 100vw;
+  }
+
+  .cards-wrapper{
+    gap: 5vh;
+  }
+
+  .card {
+    width: 90vw;
+    height: 80vh;
+  }
+  .card-text{
+    left: 2vw;
+    
+  }
+  p {
+  }
+
+}

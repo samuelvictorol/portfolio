@@ -1,1 +1,10 @@
-<div class="portfolio-wrapper animate__animated animate__fadeIn"></div>
+<div class="portfolio-wrapper animate__animated animate__fadeIn">
+    <div class="cards-wrapper">
+        <div class="card" *ngFor="let card of cards">
+            <div class="card-text">
+                <h1>{{ card.title }}</h1>
+                <p>{{ card.desc }}</p>
+            </div>
+        </div>
+    </div>
+</div>
