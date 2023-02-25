@@ -22,9 +22,22 @@
 #logo-footer:hover {
     transform: rotate(0deg);
 }
-
-@media (max-width: 1250px) {  
-    .footer-wrapper {
-        display: none;
+@media (max-width: 1300px) {
+    .footer-wrapper{
+      flex-direction: column;
+      left: 2vw;
+      top: 8vh;
+      gap: 1rem;
+    }
+  
+    #logo-footer {
+      width: 2rem;
     }
 }
+
+@media (max-width: 1000px) {
+    .footer-wrapper{
+        top: 82vh;
+    }
+}
+

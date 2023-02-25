@@ -1,3 +1,4 @@
+import { NavServicesService } from './../nav-services.service';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 @Component({
@@ -7,20 +8,13 @@ import { Router } from '@angular/router';
 })
 
 export class NavComponent {
-
-  toggleDarkMode = false
+  
   toggleResposiveNav = true
-
-  constructor (private router: Router) {}
-
-  darkMode() {
-    this.toggleDarkMode = !this.toggleDarkMode
-    const html = document.querySelector('html') as HTMLElement
-    if(this.toggleDarkMode) {
-      html.style.cssText = 'filter: invert(100%);'
-    }else {
-      html.style.cssText = 'filter: none'
-    }
+  
+  constructor (private router: Router, protected navService: NavServicesService) {}
+  ngOnInit(): void {
+    this.mouseIn('home')
+    this.navService.darkModeExec()
   }
 
   cleanMargin(){
@@ -33,7 +27,6 @@ export class NavComponent {
     sobre.classList.remove('a-selected')
     contato.classList.remove('a-selected')
   }
-
   mouseIn(rotaString: string) {
     this.cleanMargin()
     if(rotaString === 'home') {
