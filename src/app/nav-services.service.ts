@@ -5,6 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class NavServicesService {
   toggleDarkMode = false
+  toggleResposiveNav = true
 
   constructor() { }
 
@@ -24,4 +25,28 @@ export class NavServicesService {
       imgSobre.style.cssText = 'filter: none'
     }
   }
+
+  responsiveNav() {
+    this.toggleResposiveNav = !this.toggleResposiveNav
+    const traceWrapper = document.querySelector('.trace-wrapper') as HTMLElement
+    const navResponsive = document.querySelector('.nav-responsive') as HTMLElement
+    if(this.toggleResposiveNav) {
+      navResponsive.style.cssText = 'right: 0rem'
+      traceWrapper.style.cssText = 'transform: rotate(90deg)'
+    } else {
+      navResponsive.style.cssText = 'right: -100rem'
+      traceWrapper.style.cssText = 'transform: rotate(-180deg)'
+    }
+  }
+
+  minimizeNavResponsive() {
+    setTimeout(() => {
+      const traceWrapper = document.querySelector('.trace-wrapper') as HTMLElement
+      const navResponsive = document.querySelector('.nav-responsive') as HTMLElement
+      this.toggleResposiveNav = !this.toggleResposiveNav
+      traceWrapper.style.cssText = 'transform: rotate(180deg)'
+      navResponsive.style.cssText = 'right: -100rem'
+    }, 120)
+  }
+
 }
