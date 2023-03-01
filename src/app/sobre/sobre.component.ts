@@ -10,7 +10,9 @@ export class SobreComponent{
   constructor(protected navService: NavServicesService) {
   }
   ngOnInit(): void {
-    this.navService.darkModeExec()    
+    this.navService.darkModeExec()
   }
   
+
+
 }

@@ -10,7 +10,8 @@ import { Router } from '@angular/router';
 export class NavComponent {
   constructor (private router: Router, protected navService: NavServicesService) {}
   ngOnInit(): void {
-    this.mouseIn('home', false)
+// alert('Portfólio em construção :)\nTela Contato está funcional, entre em contato! :D')
+// this.mouseIn('home', false)
     this.navService.darkModeExec()
   }
 
@@ -34,6 +35,7 @@ export class NavComponent {
   }
   mouseIn(rotaString: string, click: boolean): void {
     this.cleanMargin()
+    
     if(click){
       this.navService.minimizeNavResponsive()
     }
@@ -52,7 +54,7 @@ export class NavComponent {
       const sobreResponsive = document.querySelector('#sobre-responsive') as HTMLElement
       sobre.classList.add('a-selected')
       sobreResponsive.classList.add('a-selected')
-    } else {
+    } else if(rotaString === 'contato'){
       const contato = document.querySelector('#contato') as HTMLElement
       const contatoResponsive = document.querySelector('#contato-responsive') as HTMLElement
       contato.classList.add('a-selected')

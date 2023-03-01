@@ -7,5 +7,3 @@ platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
 
 // ...
-
-// alert('Em construção :)')

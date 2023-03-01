@@ -10,6 +10,11 @@ html {
   background-color: white;
 }
 
+h1::selection, h2::selection, p::selection, input::selection, button::selection, select::selection{
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+
 body {
   // variaveis
   --nav-height: 5vh;

@@ -1,35 +1,54 @@
 .portfolio-wrapper {
   width: 100vw;
-  height: 100%;
-  padding-top: var(--nav-height);
+  padding-top: calc(var(--nav-height) + 1vh);
   color: white;
+  background: #ECE9E6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
 }
 
 .cards-wrapper {
   width: 100vw;
-  height: 90vh;
+  height: 100%;
   display: flex;
   flex-direction: row;
-  justify-content:space-between;
+  justify-content:space-evenly;
+  gap: 5vh;
   margin-top:5vh;
+  padding-bottom: 5vh;
   flex-wrap: wrap;
 }
 
 .card {
   position: relative;
-  background-color: rgb(38, 62, 63);
-  width: 18vw;
+  background-color: rgba(83, 78, 78, 0.623);
+  width: 40vw;
   height: 40vh;
   border-radius: 6px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  transition: all .4s;
+  opacity: .1;
+
+}
+
+.card:hover{
+  -webkit-box-shadow: 5px 6px 0px 4px #2b2b2b; 
+  box-shadow: 5px 6px 0px 4px #2b2b2b;
 }
 
 .card-text {
+  width: 32vw;
   position: absolute;
-  bottom: 1vh;
-  left: .5vw;
+  bottom: 2vh;
+  background: #2b2b2b;
+  padding: 1vh 1vw;
+  padding-bottom: 2vh;
+  border-radius: 6px;
+  z-index: 999;
+  transition: all .4s;
 }
 
 h1 {
@@ -37,8 +56,36 @@ h1 {
 }
 
 p{
-  width: 17.5vw;
+  width: 30vw;
   word-wrap: break-word;
+  opacity: .7;
+  font-size: 1.8vh;
+  margin-bottom: 4vh;
+  display: none;
+  transition: all .4s;
+}
+
+.card:hover p {
+  display:block;
+}
+
+.card-url {
+  position: absolute;
+  right: 1vh;
+  bottom: 1vh;
+  color: #fff;
+  border: none;
+  padding: .5vh 1vw;
+  border-radius: 6px;
+  background-color: #5f5d5d;
+  text-decoration: none;
+  transition: all .4s;
+  cursor: pointer;
+}
+
+.card-url:hover {
+  border: 1px solid rgba(255, 255, 255, 0.788);
+  opacity: .6;
 }
 
 @media (max-width: 1200px) {  
@@ -47,6 +94,7 @@ p{
   }
   .portfolio-wrapper {
     width: 100vw;
+    padding-top: 8vh;
   }
 
   .cards-wrapper{
@@ -58,10 +106,23 @@ p{
     height: 80vh;
   }
   .card-text{
-    left: 2vw;
-    
+    height: 30vh;
+    width: 90%;
+    padding: 2vh 2vw;
+  }
+  h1{
+    font-size: 4vh;
   }
   p {
+    font-size: 2.5vh;
+    margin-bottom: 4vh;
+    width: 100%;
+    display: block;
   }
-
+  .card-url{
+    right: 3.2vw;
+    bottom: 3.2vw;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  }
 }

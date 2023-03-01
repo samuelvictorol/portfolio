@@ -1,11 +1,12 @@
 <div class="portfolio-wrapper animate__animated animate__fadeIn">
-    <!-- <div class="cards-wrapper">
-        <div class="card" *ngFor="let card of cards">
-            <div class="card-text">
+    <div class="cards-wrapper">
+        <div *ngFor="let card of cards" style="background-image: url('{{ card.img }}'); background-size: cover;" class="card animate__animated animate__fadeInDown" >
+            <div class="card-text" >
                 <h1>{{ card.title }}</h1>
-                <p>{{ card.desc }}</p>
+                <p class="animate__animated animate__fadeInDown">{{ card.desc }}</p>
+                <a class="card-url" (click)="cardUrl(card.url)">Ver Projeto</a>
             </div>
         </div>
-    </div> -->
-    <h1 style="z-index: 999; color: goldenrod; margin-top: 20vh; margin-left:10vw;">Em construção :)</h1>
+    </div>
 </div>
+<!-- <h1 style="z-index: 999; color: goldenrod; margin-top: 20vh; margin-left:10vw;">Em construção :)</h1> -->

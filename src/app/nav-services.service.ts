@@ -16,7 +16,7 @@ export class NavServicesService {
 
   darkModeExec() {
     const html = document.querySelector('html') as HTMLElement
-    const imgSobre = document.querySelector('.img-sobre') as HTMLImageElement
+    const imgSobre = document.querySelector('.img-sobre') as HTMLElement
     if(this.toggleDarkMode) {
       html.style.cssText = 'filter: invert(100%);'
       imgSobre.style.cssText = 'filter: none; filter: brightness(0);'
@@ -47,6 +47,15 @@ export class NavServicesService {
       traceWrapper.style.cssText = 'transform: rotate(180deg)'
       navResponsive.style.cssText = 'right: -100rem'
     }, 120)
+  }
+
+  toggleHideNav(showNav: boolean) {
+    const navWrapper = document.querySelector('.nav-wrapper') as HTMLElement
+    if(showNav) {
+      navWrapper.style.cssText = 'visibility: visible; z-index:999;'
+    } else {
+      navWrapper.style.cssText = 'visibility: hidden; z-index: -999;'
+    }
   }
 
 }
