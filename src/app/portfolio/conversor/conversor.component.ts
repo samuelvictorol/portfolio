@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
 })
 export class ConversorComponent {
   toggleWrapper = false
+  input: any
   
   constructor(protected router: Router, protected navService: NavServicesService) {}
 
@@ -20,21 +21,32 @@ export class ConversorComponent {
     this.navService.toggleHideNav(true)    
     this.router.navigate(['portfolio'])
   }
-  
   converter() {
     const input = document.querySelector('.conversor-input') as HTMLInputElement
-    this.toggleWrappers(input.value)
+    if(input.value.includes('.com')){
+      this.input = input.value
+      this.toggleWrappers()
+    } else {
+      input.value = 'Digite um link válido'
+      input.select()
+    }
   }
   
-  toggleWrappers (inputValue: string) {
+  toggleWrappers () {
     this.toggleWrapper = !this.toggleWrapper
-    const closeFrameBtn = document.querySelector('.close-frame-btn') as HTMLElement
-    let frame = `<iframe id="widgetv2Api" src="https://convert2mp3s.com/api/widgetv2?url=${inputValue}" width="100%" height="100%" allowtransparency="true" scrolling="yes" style="border:none"></iframe>`
+    let frameString = `<iframe id="widgetv2Api" src="https://convert2mp3s.com/api/widgetv2?url=${this.input}" width="100%" height="100%" allowtransparency="true" scrolling="yes" style="border:none"></iframe>`
+    const btnConvertAgain = document.querySelector('#btn-convert-again') as HTMLElement
     const convertWrapper = document.querySelector('#convert-wrapper') as HTMLElement
     if(this.toggleWrapper) {
-      convertWrapper.innerHTML = frame
+      convertWrapper.innerHTML = frameString
+      btnConvertAgain.style.visibility = 'visible'
     } else {
+      document.location.reload();
     }
+  }
+
+  help() {
+    alert('Conversor de links de vídeos para MP3 - MP4\n------------------------------------------------\nInsira o link do vídeo que deseja converter e clique em converter.\nSuporta links de vídeos do: YouTube, SoundCloud, Facebook, Twitter, Instagram, TikTok, Vimeo, Dailymotion, VK, ou AOL Video URL')
   }
 
 }
