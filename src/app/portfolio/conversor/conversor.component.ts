@@ -46,7 +46,7 @@ export class ConversorComponent {
   }
 
   help() {
-    alert('Conversor de links de vídeos para MP3 - MP4\n------------------------------------------------\nInsira o link do vídeo que deseja converter e clique em converter.\nSuporta links de vídeos do: YouTube, SoundCloud, Facebook, Twitter, Instagram, TikTok, Vimeo, Dailymotion, VK, ou AOL Video URL')
+    alert('Conversor de links de vídeos para MP3 - MP4\n----------------------\nInsira o link do vídeo que deseja converter e clique em converter.\nSuporta links de vídeos do: YouTube, SoundCloud, Facebook, Twitter, Instagram, TikTok, Vimeo, Dailymotion, VK, ou AOL Video URL')
   }
 
 }

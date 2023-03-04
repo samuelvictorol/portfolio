@@ -10,8 +10,8 @@ import { Router } from '@angular/router';
 export class NavComponent {
   constructor (private router: Router, protected navService: NavServicesService) {}
   ngOnInit(): void {
-    // alert('Portfólio em construção :)\nTela Contato já está funcional! Entre em contato! :D')
-    // this.mouseIn('home', false)
+    alert('Portfólio em construção :)\nTela Contato já está funcional! Entre em contato! :D')
+    this.mouseIn('home', false)  
     this.navService.darkModeExec()
   }
 
