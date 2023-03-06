@@ -18,7 +18,7 @@ export class NavServicesService {
     const html = document.querySelector('html') as HTMLElement
     const imgSobre = document.querySelector('.img-sobre') as HTMLElement
     if(this.toggleDarkMode) {
-      html.style.cssText = 'filter: invert(100%);'
+      html.style.cssText = 'filter: invert(.9);'
       imgSobre.style.cssText = 'filter: none; filter: brightness(0);'
     }else {
       html.style.cssText = 'filter: none'

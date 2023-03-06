@@ -1,7 +1,7 @@
 @import '~normalize.css';
 @import url('https://fonts.googleapis.com/css2?family=Babylonica&family=Gloock&family=Montserrat:wght@300;400&family=Quicksand&family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Tilt+Prism&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
 
 html {
   width: 100vw;
@@ -47,4 +47,8 @@ body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #000000; 
+}
+
+button, a {
+  font-weight: normal;
 }

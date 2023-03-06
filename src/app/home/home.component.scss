@@ -7,10 +7,7 @@
   flex-direction: row;
   justify-content: space-around;
   align-self: center;
-  background: #F2F2F2;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #EAEAEA, #DBDBDB, #F2F2F2, #c0c0c0);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #EAEAEA, #f7f7f7, #f3f3f3, #f1f1f1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+  background: linear-gradient(to bottom right, #ffffff, #f7f7f7);
 }
 
 .text {
