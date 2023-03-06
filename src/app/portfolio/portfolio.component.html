@@ -4,7 +4,7 @@
             <div class="card-text" >
                 <h1>{{ card.title }}</h1>
                 <p class="animate__animated animate__fadeInUp">{{ card.desc }}</p>
-                <a class="card-url" target="{{ card.target }}" href="{{ card.url }}">Ver Projeto</a>
+                <a class="card-url" target="{{ card.target }}" (click)="cardUrl(card.url)">Ver Projeto</a>
             </div>
         </div>
     </div>
