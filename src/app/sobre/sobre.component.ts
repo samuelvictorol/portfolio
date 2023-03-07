@@ -11,6 +11,7 @@ export class SobreComponent{
   }
   ngOnInit(): void {
     this.navService.darkModeExec()
+    this.navService.mouseIn('sobre', false)
   }
   
 

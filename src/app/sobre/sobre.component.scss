@@ -51,15 +51,21 @@
     animation-duration: 2s;
 }
 
+.container-sobre {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .sobre-text {
-    position: absolute;
     background-color: #2b2b2b;
     border-radius: 6px;
     max-width: 30vw;
     z-index: 999;
     padding: 0 20px;
-    top: 20vh;
-    left: 60vw;
     animation-duration: 1s;
 }
 
@@ -76,6 +82,7 @@ h1:hover {
 }
 
 p{
+    font-size: 2vh;
     padding-bottom: 2vh;
     color: #fff;
     opacity: .8;
@@ -89,17 +96,18 @@ h1::selection, p::selection {
 
 .img-sobre{
     animation-duration: 2s;
-    position: absolute;
     z-index: 999;
-    top: 15vh;
-    left: 10vw;
-    width: 30vw;
+    width: 20vw;
+    height: 50vh;
     border-radius: 100%;
-    filter: grayscale(1);
-    border: 20px solid rgb(43, 43, 43);
-    transform: rotate(5deg);
+    border-top: 7px double #000000be;
+    border-bottom: 7px double #000000be;
+    border-radius: 120px;
     transition: all .4s;
-    object-position: top;
+}
+
+.img-sobre:hover {
+    transform: rotate3d(0, 1, 0, 20deg);
 }
 
 .filter-none{
@@ -110,6 +118,11 @@ h1::selection, p::selection {
 @media (max-width: 1000px) {  
     .sobre-wrapper {
         height: 200vh;
+    }
+
+    .container-sobre {
+        padding-top: 1vh;
+        gap: 5vh;
     }
 
     .line, .line::after{
@@ -124,9 +137,14 @@ h1::selection, p::selection {
         z-index: 9999;
     }    
     .img-sobre{
-        width: 90vw;
-        top: 82vh;
+        transform: rotate3d(0, 1, 0, 20deg);
+        width: 95vw;
+        height: 60vh;
+        top: 75vh;
         left: 0vw;
+        background: #30303017;
+        backdrop-filter: blur( 2px );
+        -webkit-backdrop-filter: blur( 3px );
     }
 
 }

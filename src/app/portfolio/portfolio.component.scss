@@ -72,7 +72,7 @@ p{
 }
 
 .card-url {
-  font-weight: normal;
+  font-weight:100;
   position: absolute;
   right: 1vh;
   bottom: 1vh;
@@ -95,6 +95,7 @@ p{
   html {
     background-color: #ECE9E6;
   }
+
   .portfolio-wrapper {
     width: 100vw;
     padding-top: 8vh;
@@ -110,6 +111,7 @@ p{
     height: 80vh;
     background-position-x: center;
   }
+  
   .card-text{
     height: 45vh;
     width: 90%;

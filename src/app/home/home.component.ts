@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavServicesService } from '../nav-services.service';
 
 @Component({
   selector: 'app-home',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   
+  constructor(protected navService: NavServicesService){}
+
+  ngOnInit(): void {
+    this.navService.mouseIn('home', false)
+  }
 }

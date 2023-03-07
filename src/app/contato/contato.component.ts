@@ -1,3 +1,4 @@
+import { NavServicesService } from './../nav-services.service';
 import { Component } from '@angular/core';
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 
@@ -7,6 +8,12 @@ import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
   styleUrls: ['./contato.component.scss']
 })
 export class ContatoComponent {
+
+  constructor(private navService: NavServicesService){}
+
+  ngOnInit(): void {
+    this.navService.mouseIn('contato', false)
+  }
 
   public sendEmail(e: Event) {
     e.preventDefault();

@@ -1,9 +1,9 @@
 <div class="nav-wrapper animate__animated animate__backInDown">
-  <a id="home" (mouseenter)="mouseIn('home', false)" routerLink="home">Home</a>
-  <a id="portfolio" (mouseenter)="mouseIn('portfolio', false)" routerLink="portfolio">Portfólio</a>
+  <a id="home" (mouseenter)="navService.mouseIn('home', false)" routerLink="home">Home</a>
+  <a id="portfolio" (mouseenter)="navService.mouseIn('portfolio', false)" routerLink="portfolio">Portfólio</a>
   <a (click)="navService.darkMode()"><img class="darkmode-btn" src="assets/darkmodebtn.svg" alt=""></a>
-  <a id="sobre" (mouseenter)="mouseIn('sobre', false)" routerLink="sobre">Sobre</a>
-  <a id="contato" (mouseenter)="mouseIn('contato', false)" routerLink="contato">Contato</a>
+  <a id="sobre" (mouseenter)="navService.mouseIn('sobre', false)" routerLink="sobre">Sobre</a>
+  <a id="contato" (mouseenter)="navService.mouseIn('contato', false)" routerLink="contato">Contato</a>
 </div>
 
 <div class="trace-wrapper" (click)="navService.responsiveNav()">
@@ -14,8 +14,8 @@
 
 <div class="nav-responsive">
   <a (click)="navService.darkMode()"><img class="darkmode-btn" src="assets/darkmodebtn.svg" alt="botão darkmode"></a>
-  <a id="home-responsive"class="nav-link-responsive" (click)="mouseIn('home', true)" routerLink="home">Home</a>
-  <a id="portfolio-responsive"class="nav-link-responsive" (click)="mouseIn('portfolio', true)" routerLink="portfolio">Portfólio</a>
-  <a id="sobre-responsive"class="nav-link-responsive" (click)="mouseIn('sobre', true)" routerLink="sobre">Sobre</a>
-  <a id="contato-responsive"class="nav-link-responsive" (click)="mouseIn('contato', true)" routerLink="contato">Contato</a>
+  <a id="home-responsive"class="nav-link-responsive" (click)="navService.mouseIn('home', true)" routerLink="home">Home</a>
+  <a id="portfolio-responsive"class="nav-link-responsive" (click)="navService.mouseIn('portfolio', true)" routerLink="portfolio">Portfólio</a>
+  <a id="sobre-responsive"class="nav-link-responsive" (click)="navService.mouseIn('sobre', true)" routerLink="sobre">Sobre</a>
+  <a id="contato-responsive"class="nav-link-responsive" (click)="navService.mouseIn('contato', true)" routerLink="contato">Contato</a>
 </div>
