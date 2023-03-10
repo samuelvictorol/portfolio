@@ -9,12 +9,15 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  border-radius: 10px;
   transition: all 0.2s;
+  background: #000000ad;
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 5px );
 }
 
 a {
-  color: black;
+  font-weight: normal;
+  color: rgb(221, 221, 221);
   text-decoration: none;
   font-size: 1.5rem;
   transition: all 0.1s;
@@ -23,13 +26,20 @@ a {
 
 .a-selected {
   padding-bottom: .4rem;
-  border-bottom: 2px solid #3a3a3a;
+  border-bottom: 2px solid #555252;
 }
 
 .darkmode-btn {
+  filter: invert(.9);
+  opacity: .4;
   width: 2rem;
   height: 2rem;
+  transition: opacity .4s;
   cursor: pointer;
+}
+
+.darkmode-btn:hover {
+  opacity: 1;
 }
 
 .trace-wrapper {
@@ -86,6 +96,11 @@ a {
   justify-content: center;
   z-index: 998;
   transition: all 0.4s;
+}
+
+.darkmode-btn {
+  filter: none;
+  opacity: 1;
 }
 
 .nav-link-responsive {

@@ -140,14 +140,13 @@ a:hover {
 }
 
 #help-btn:hover {
-    opacity: .8;
-    filter: drop-shadow(0 0 0.1rem rgb(51, 51, 51));
+    opacity: .7;
 }
 
 
 @media (max-width: 1200px) {  
     .btn-voltar {
-        top: 3vh;
+        top: 5vh;
         right:3vw;
     }
     

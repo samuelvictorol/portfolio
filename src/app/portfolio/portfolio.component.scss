@@ -1,8 +1,8 @@
 .portfolio-wrapper {
   width: 100vw;
-  padding-top: calc(var(--nav-height) + 1vh);
+  padding-top: calc(var(--nav-height) + 3vh);
   color: white;
-  background: linear-gradient(to bottom right, #ffffff, #f7f7f7);
+  background: linear-gradient(to bottom right, #e6e4e4, #777777);
 }
 
 .cards-wrapper {
@@ -23,25 +23,29 @@
   background-color: rgba(83, 78, 78, 0.623);
   width: 40vw;
   height: 40vh;
-  border-radius: 6px;
+  border-radius: 22px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   transition: all .4s;
   opacity: .1;
-
+  border: 4px solid #3c3c3c;
 }
 
 .card:hover{
+  transform: rotate(0deg);
   -webkit-box-shadow: 5px 6px 0px 4px #2b2b2b; 
   box-shadow: 5px 6px 0px 4px #3c3c3c;
 }
 
 .card-text {
+  border: 1px solid #2b2b2b;
   width: 32vw;
   position: absolute;
   bottom: 2vh;
-  background: #2b2b2b;
+  background: #000000d3;
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 3px );
   padding: 1vh 1vw;
   padding-bottom: 2vh;
   border-radius: 6px;
@@ -49,8 +53,8 @@
   transition: all .4s;
 }
 h1 {
-  font-weight: normal;
-  color: #fdfdfd;
+  font-weight: bold;
+  color: #ececec;
   font-size: 5vh;
   font-family: 'Space Grotesk', sans-serif;
 }
@@ -59,12 +63,12 @@ p{
   width: 30vw;
   word-wrap: break-word;
   opacity: .7;
+  font-weight: normal;
   font-size: 1.8vh;
   margin-bottom: 4vh;
   display: none;
   transition: all .4s;
-  color: #bab7b7;
-  opacity: .4;
+  color: #c5c5c5;
 }
 
 .card:hover p {
@@ -72,22 +76,22 @@ p{
 }
 
 .card-url {
-  font-weight:100;
+  font-weight: bold;
   position: absolute;
   right: 1vh;
   bottom: 1vh;
-  color: #fff;
+  color: #222020;
   border: none;
   padding: .5vh 1vw;
   border-radius: 6px;
-  background-color: #5f5d5d;
+  background-color: #e2e0e0;
   text-decoration: none;
   transition: all .4s;
   cursor: pointer;
 }
 
 .card-url:hover {
-  border: 1px solid rgba(255, 255, 255, 0.788);
+  border: 1px solid rgba(44, 43, 43, 0.89);
   opacity: .6;
 }
 
@@ -106,6 +110,7 @@ p{
   }
 
   .card {
+    border-radius: 6px 6px 6px 6px;
     border: 1px solid rgb(140, 140, 140);
     width: 90vw;
     height: 80vh;

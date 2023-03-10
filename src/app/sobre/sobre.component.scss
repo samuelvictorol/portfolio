@@ -126,7 +126,7 @@ h1::selection, p::selection {
     position: absolute;
     right: 1vw;
     bottom: 1.4vh;
-    padding: 6px 6px;
+    padding: 6px 12px;
     opacity: .8;
     transition: all .2s;
     font-size:1rem;
@@ -139,7 +139,7 @@ h1::selection, p::selection {
 
 @media (max-width: 1000px) {  
     .sobre-wrapper {
-        height: 200vh;
+        height: 120vh;
     }
 
     .container-sobre {
@@ -159,7 +159,6 @@ h1::selection, p::selection {
         z-index: 9999;
     }    
     .img-sobre{
-        transform: rotate3d(0, 1, 0, 20deg);
         width: 95vw;
         height: 60vh;
         top: 75vh;
