@@ -14,6 +14,9 @@ export class SobreComponent{
     this.navService.mouseIn('sobre', false)
   }
   
-
+  baixarCV(){
+    const pdfUrl = 'assets/cv.pdf'
+    window.open(pdfUrl, '_blank');
+  }
 
 }

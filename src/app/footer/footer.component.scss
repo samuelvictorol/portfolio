@@ -1,14 +1,14 @@
 .footer-wrapper {
     position: absolute;
     bottom: 5vh;
-    left: 0;
+    left: 16.5vw;
     height: 10vh;
     width: 100vw;
     display: flex;
     flex-direction: row;
     gap: 4rem;
-    justify-content: center;
-    z-index: 99;
+    justify-content:flex-start;
+    z-index: 9999;
 }
 
 #logo-footer {
@@ -24,14 +24,17 @@
 }
 @media (max-width: 1300px) {
     .footer-wrapper{
-      flex-direction: column;
-      left: 2vw;
-      top: 8vh;
-      gap: 1rem;
+        left: unset;
+        gap: 1rem;
+        justify-content: center;
     }
   
     #logo-footer {
-      width: 3rem;
+        transform: rotate(0deg);
+        filter: invert(1);
+        width: 3rem;
+        opacity: .6;
+        padding-bottom: 1.6rem;
     }
 }
 

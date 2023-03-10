@@ -66,7 +66,10 @@
     max-width: 30vw;
     z-index: 999;
     padding: 0 20px;
+    position: relative;
     animation-duration: 1s;
+    padding-bottom: 4vh;
+
 }
 
 h1{
@@ -114,6 +117,25 @@ h1::selection, p::selection {
     filter: none;
 }
 
+#btn-cv {
+    background-color: #fff;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 1vw;
+    bottom: 1.4vh;
+    padding: 6px 6px;
+    opacity: .8;
+    transition: all .2s;
+    font-size:1rem;
+}
+
+#btn-cv:hover {
+    opacity: .9;
+    transform: scale(1.2)
+}
 
 @media (max-width: 1000px) {  
     .sobre-wrapper {
@@ -122,11 +144,11 @@ h1::selection, p::selection {
 
     .container-sobre {
         padding-top: 1vh;
-        gap: 5vh;
+        gap: 6vh;
     }
 
     .line, .line::after{
-        z-index: -99;
+        z-index: -999;
     }
 
     .sobre-text {
@@ -142,9 +164,11 @@ h1::selection, p::selection {
         height: 60vh;
         top: 75vh;
         left: 0vw;
-        background: #30303017;
+        background: #30303009;
         backdrop-filter: blur( 2px );
         -webkit-backdrop-filter: blur( 3px );
     }
-
+    #btn-cv {
+        right: 1rem;
+    }
 }
