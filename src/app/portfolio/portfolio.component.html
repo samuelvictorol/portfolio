@@ -1,6 +1,7 @@
 <div class="portfolio-wrapper animate__animated animate__fadeIn">
     <div class="cards-wrapper">
-        <div *ngFor="let card of cards" style="background-image: url('{{ card.img }}'); background-size: cover;" class="card animate__animated animate__fadeInDown" >
+        <div *ngFor="let card of cards" style="background-image: url('{{ card.img }}'); background-size: cover;" class="card animate__animated animate__fadeInDown">
+            
             <div class="card-text" >
                 <h1>{{ card.title }}</h1>
                 <p class="animate__animated animate__fadeInUp">{{ card.desc }}</p>

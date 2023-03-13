@@ -16,8 +16,9 @@
 }
 
 a {
-  font-weight: normal;
-  color: rgb(221, 221, 221);
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 1.5rem;
   transition: all 0.1s;
@@ -26,7 +27,7 @@ a {
 
 .a-selected {
   padding-bottom: .4rem;
-  border-bottom: 2px solid #555252;
+  border-bottom: 2px solid #ffffffd8;
 }
 
 .darkmode-btn {
