@@ -1,85 +1,92 @@
-.portfolio-wrapper {
-  width: 100vw;
-  padding-top: calc(var(--nav-height) + 3vh);
-  color: white;
-  background: linear-gradient(to bottom right, #e6e4e4, #777777);
-}
 
-.cards-wrapper {
+.carousel {
+  padding-top: calc(var(--nav-height) + 7vh);
   width: 100vw;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content:space-evenly;
-  gap: 5vh;
-  margin-top:5vh;
-  padding-bottom: 5vh;
-  flex-wrap: wrap;
-  filter: grayscale(1);
-}
-
-.card {
-  position: relative;
-  background-color: rgba(83, 78, 78, 0.623);
-  width: 40vw;
-  height: 40vh;
-  border-radius: 22px;
+  background: #ECE9E6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  transition: all .4s;
-  opacity: .1;
-  border: 4px solid #3c3c3c;
-  filter: brightness(.3);
-}
+  justify-content: center;
+  align-items: center;
+  gap:6vh
+  }
 
-.card:hover{
-  cursor: pointer;
-  filter: none;
-  transform: rotate(0deg);
-  -webkit-box-shadow: 5px 6px 0px 4px #2b2b2b; 
-  box-shadow: 5px 6px 0px 4px #3c3c3c;
-}
-
-.card-text {
-  border: 1px solid #2b2b2b;
-  width: 32vw;
-  position: absolute;
-  bottom: 2vh;
-  background: #000000d3;
-  backdrop-filter: blur( 4px );
-  -webkit-backdrop-filter: blur( 3px );
-  padding: 1vh 1vw;
-  padding-bottom: 2vh;
+.project-item {
   border-radius: 6px;
-  z-index: 999;
+  background-color: grey;
+  position: relative;
+  z-index: 9;
+  width: 90vw;
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-position: center;
   transition: all .4s;
-}
-h1 {
-  font-weight: bold;
-  color: #ececec;
-  font-size: 5vh;
-  font-family: 'Tilt Prism', sans-serif;
+  filter: brightness(.1);
+  cursor: pointer;
 }
 
-p{
-  width: 30vw;
-  word-wrap: break-word;
-  opacity: .7;
-  font-weight: normal;
-  font-size: 1.8vh;
-  margin-bottom: 4vh;
-  display: none;
-  transition: all .4s;
-  color: #c5c5c5;
-  
+.project-item:last-child {
+  margin-bottom: 2vh;
 }
 
-.card:hover p {
+.project-item:hover  {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.project-text {
+    border: 1px solid #2b2b2b;
+    width: 80%;
+    position: absolute;
+    bottom: 2vh;
+    background: #000000d3;
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 3px );
+    padding: 1vh 1vw;
+    padding-bottom: 2vh;
+    border-radius: 6px;
+    z-index: 99;
+    transition: all .4s;
+}
+
+.project-item:hover{
+  filter: none;
+}
+
+.project-text:hover p{
   display:block;
 }
 
-.card-url {
+h1 {
+  transition: all .2s;
+  font-weight: bold;
+  color: #ececec;
+  font-size: 8vh;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.project-item:hover h1{
+  padding-left: .5vw;
+}
+
+.project-text:hover h1{
+  padding-left: 1vw;
+}
+
+p{
+  width: 80%;
+  word-wrap: break-word;
+  opacity: .6;
+  font-weight: normal;
+  font-size: 2.4vh;
+  margin-bottom: 4vh;
+  padding-left: 2vw;
+  display: none;
+  transition: all .4s;
+  color: #c5c5c5e1;
+}
+
+.project-url {
   font-weight: bold;
   position: absolute;
   right: 1vh;
@@ -94,26 +101,16 @@ p{
   cursor: pointer;
 }
 
-.card-url:hover {
+.project-url:hover {
   border: 1px solid rgba(44, 43, 43, 0.89);
   opacity: .6;
 }
 
 @media (max-width: 1200px) {  
-  html {
-    background-color: #ECE9E6;
+  .project-item {
+    filter: none;
   }
-
-  .portfolio-wrapper {
-    width: 100vw;
-    padding-top: 8vh;
-  }
-
-  .cards-wrapper{
-    gap: 5vh;
-  }
-
-  .card {
+  .project {
     border-radius: 6px 6px 6px 6px;
     border: 1px solid rgb(140, 140, 140);
     width: 90vw;
@@ -122,29 +119,21 @@ p{
     filter: none;
   }
   
-  .card-text{
-    height: 45vh;
+  .project-text{
+    height: 50vh;
     width: 90%;
     padding: 2vh 2vw;
   }
-  h1{
-    font-size: 4vh;
+
+  h1 {
+    font-size: 5vh;
   }
+
   p {
     display: block;
     font-size: 2.5vh;
     margin-bottom: 4vh;
     width: 100%;
   }
-  .card-url{
-    width: 20vh;
-    padding: 1vh 1vw;
-    padding-left: 1rem;
-    right: 3vw;
-    bottom: 4vh;
-  }
-  .card:hover .card-url {
-    border: 1px solid rgb(255, 255, 255);
-  } 
-}
 
+}

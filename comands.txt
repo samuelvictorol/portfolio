@@ -3,3 +3,16 @@ npm install -g angular-cli-ghpages
 ng build --configuration production --base-href "https://samuelvictorol.github.io/portfolio/"
 
 ngh --dir dist/portfolio
+
+<div *ngIf="false" class="portfolio-wrapper animate__animated animate__fadeIn">
+    <div class="cards-wrapper">
+        <div *ngFor="let card of cards" style="background-image: url('{{ card.img }}'); background-size: cover;" class="card animate__animated animate__fadeInDown">
+            
+            <div class="card-text" >
+                <h1>{{ card.title }}</h1>
+                <p class="animate__animated animate__fadeInUp">{{ card.desc }}</p>
+                <a class="card-url" target="{{ card.target }}" (click)="cardUrl(card.url)">Ver Projeto</a>
+            </div>
+        </div>
+    </div>
+</div>

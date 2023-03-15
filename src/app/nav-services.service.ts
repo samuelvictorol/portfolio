@@ -24,6 +24,7 @@ export class NavServicesService {
     }else {
       html.style.cssText = 'filter: none'
       imgSobre.style.cssText = 'filter: none'
+
     }
   }
 

@@ -2,7 +2,7 @@
   z-index: 99;
   position: fixed;
   width: 100vw;
-  padding: 1.5rem 0;
+  padding: 2vh 0;
   height: var(--nav-height);
   display: flex;
   flex-direction: row;
@@ -26,7 +26,7 @@ a {
 }
 
 .a-selected {
-  padding-bottom: .4rem;
+  padding-bottom: .2rem;
   border-bottom: 2px solid #ffffffd8;
 }
 
@@ -79,6 +79,10 @@ a {
     display: block;
   }
 
+  a {
+    font-family: 'Montserrat', sans-serif;
+  }
+
   .nav-responsive {
   position: fixed;
   top: 0rem;
@@ -95,7 +99,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 998;
+  z-index: 999;
   transition: all 0.4s;
 }
 
