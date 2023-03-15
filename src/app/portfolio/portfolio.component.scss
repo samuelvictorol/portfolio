@@ -14,13 +14,16 @@
 
 .project-item {
   border-radius: 6px;
-  background-color: grey;
+  background-color: #A1FFCE;  /* fallback for old browsers */
+  background-color: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
+  background-color: linear-gradient(to right, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
   position: relative;
   z-index: 9;
   width: 90vw;
   height: 80vh;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position-x: center;
   transition: all .4s;
   filter: brightness(.1);
   cursor: pointer;
@@ -31,7 +34,8 @@
 }
 
 .project-item:hover  {
-  border: 2px solid rgb(0, 0, 0);
+  filter: brightness(1);
+  border: 1px inset rgb(58, 55, 55);
 }
 
 .project-text {
@@ -49,20 +53,18 @@
     transition: all .4s;
 }
 
-.project-item:hover{
-  filter: none;
-}
-
-.project-text:hover p{
+.project-item:hover p {
   display:block;
+  filter: none;
 }
 
 h1 {
   transition: all .2s;
   font-weight: bold;
-  color: #ececec;
+  color: #ecececfa;
   font-size: 8vh;
   font-family: 'Montserrat', sans-serif;
+  
 }
 
 .project-item:hover h1{
@@ -133,7 +135,8 @@ p{
     display: block;
     font-size: 2.5vh;
     margin-bottom: 4vh;
-    width: 100%;
+    padding-right: 2vw;
+    width: 95%;
   }
 
 }

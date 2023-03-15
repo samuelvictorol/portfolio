@@ -9,7 +9,7 @@
                 <p class="animate__animated animate__fadeInUp" >
                     {{ project.desc }}
                 </p>
-                <button class="project-url">Ver Projeto</button>
+                <button class="project-url" *ngIf="project.privacity != 'privado'">Ver Projeto</button>
             </div>
         </div>
     </div>

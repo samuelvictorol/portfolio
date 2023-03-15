@@ -106,11 +106,6 @@ h1::selection, p::selection {
     border-top: 7px double #000000be;
     border-bottom: 7px double #000000be;
     border-radius: 120px;
-    transition: all .4s;
-}
-
-.img-sobre:hover {
-    transform: rotate3d(0, 1, 0, 20deg);
 }
 
 .filter-none{
