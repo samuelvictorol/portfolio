@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component } from '@angular/core';
 import { NavServicesService } from '../nav-services.service';
 
@@ -8,9 +9,14 @@ import { NavServicesService } from '../nav-services.service';
 })
 export class HomeComponent {
   
-  constructor(protected navService: NavServicesService){}
+  constructor(protected navService: NavServicesService, protected router: Router){}
 
   ngOnInit(): void {
     this.navService.mouseIn('home', false)
   }
+
+  startTrip(rotaString: string) {
+    this.router.navigate([rotaString])
+  }
+
 }

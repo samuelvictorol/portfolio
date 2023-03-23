@@ -2,11 +2,14 @@
 .carousel {
   padding-top: calc(var(--nav-height) + 7vh);
   width: 100vw;
-  background: #ECE9E6;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+  background: #232526;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+   
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap:6vh
@@ -17,11 +20,11 @@
   background-color: #A1FFCE;  /* fallback for old browsers */
   background-color: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
   background-color: linear-gradient(to right, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+  border: 2px solid rgb(187, 187, 187);
   position: relative;
   z-index: 9;
-  width: 90vw;
-  height: 80vh;
+  width: 40vw;
+  height: 50vh;
   background-repeat: no-repeat;
   background-position-x: center;
   transition: all .4s;
@@ -35,7 +38,6 @@
 
 .project-item:hover  {
   filter: brightness(1);
-  border: 1px inset rgb(58, 55, 55);
 }
 
 .project-text {
@@ -62,7 +64,7 @@ h1 {
   transition: all .2s;
   font-weight: bold;
   color: #ecececfa;
-  font-size: 8vh;
+  font-size: 5vh;
   font-family: 'Montserrat', sans-serif;
   
 }
@@ -80,7 +82,7 @@ p{
   word-wrap: break-word;
   opacity: .6;
   font-weight: normal;
-  font-size: 2.4vh;
+  font-size: 2vh;
   margin-bottom: 4vh;
   padding-left: 2vw;
   display: none;
@@ -108,11 +110,9 @@ p{
   opacity: .6;
 }
 
-@media (max-width: 1200px) {  
+@media (max-width: 1300px) {  
+
   .project-item {
-    filter: none;
-  }
-  .project {
     border-radius: 6px 6px 6px 6px;
     border: 1px solid rgb(140, 140, 140);
     width: 90vw;

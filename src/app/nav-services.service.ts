@@ -85,6 +85,7 @@ export class NavServicesService {
     if(click){
       this.minimizeNavResponsive()
     }
+    
     if(rotaString === 'home') {
       const home = document.querySelector('#home') as HTMLElement
       const homeResponsive = document.querySelector('#home-responsive') as HTMLElement
