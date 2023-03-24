@@ -10,6 +10,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContatoComponent } from './contato/contato.component';
 import { ConversorComponent } from './portfolio/conversor/conversor.component';
+import { SkillsComponent } from './skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ConversorComponent } from './portfolio/conversor/conversor.component';
     PortfolioComponent,
     FooterComponent,
     ContatoComponent,
-    ConversorComponent
+    ConversorComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,

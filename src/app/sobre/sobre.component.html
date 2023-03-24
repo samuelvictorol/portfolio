@@ -2,9 +2,11 @@
     <div class="container-sobre">
         <img class="img-sobre" src="assets/eu.png" alt="foto de Samuel Victor">
         <div class="sobre-text animate__animated animate__fadeInDown">
-            <h1>Olá,</h1>
-            <p>Meu nome é Samuel, sou graduando em Engenharia de Software pela Universidade de Brasília e trabalho como programador frontend na Cast Group. Minha paixão é desenvolver interfaces de usuário que sejam bonitas e fáceis de usar, sempre buscando oferecer a melhor experiência possível para os usuários. Tenho me esforçado para aprimorar minhas habilidades de programação e estou em constante aprendizado para me manter atualizado com as tendências do mercado. Sempre trabalho com dedicação e comprometimento para entregar projetos que atendam às expectativas dos clientes.</p>
-            <button id="btn-cv" (click)="baixarCV()">Ver CV</button>
+            <h1>Olá, {{ saudacao }} !</h1>
+            <p id="my-name">Meu nome é Samuel Victor,</p>
+            <p>Sou programador frontend na Cast Group, atualmente em projeto interno do Banco da Amazônia utilizando Vue.js e Quasar. Possuo experiência FullStack com afinidade em frontend . Tenho me esforçado para aprimorar minhas habilidades de programação e estou em constante aprendizado para me manter atualizado com as tendências do mercado.</p>
+            <button class="btn-sobre" id="btn-cv" (click)="baixarCV()">Ver Currículo</button>
+            <button class="btn-sobre" id="btn-contato" (click)="navService.mouseIn('contato', false)">Fale Comigo</button>
         </div>
        
     </div>
@@ -12,3 +14,4 @@
     <div class="line"></div>
     <app-footer></app-footer>
 </div>
+<app-skills></app-skills>

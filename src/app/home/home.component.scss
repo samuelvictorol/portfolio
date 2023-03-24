@@ -28,7 +28,6 @@
 .text {
   padding-top: 12vh;
 }
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
 h1 {
   border-radius: 6px;
   color: #fff;
@@ -71,20 +70,15 @@ h1::selection, h2::selection{
   border-radius: 6px;
   border: none;
   cursor: pointer;
-  background: #232526de;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #414345da, #232526ce);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #414345da, #232526e1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  transition: all .2s;
-  color: rgb(231, 231, 231);
-  opacity: .9;
-}
-
-.btn-home:hover{
-  opacity: 1;
   background: #232526;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to bottom, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+  transition: all .2s;
+  color: rgb(231, 231, 231);
+  opacity: 1;
+}
+
+.btn-home:hover{
   backdrop-filter: blur( 1px );
   -webkit-backdrop-filter: blur( 3px );
   -webkit-box-shadow: 5px 6px 0px 4px #505050; 

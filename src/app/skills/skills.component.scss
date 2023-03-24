@@ -1,0 +1,86 @@
+
+.line{
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    background: rgb(0, 0, 0);
+    overflow: hidden
+  }
+  
+  .line::after{
+      content: '';
+      display: block;
+      position: absolute;
+      height: 15vh;
+      width: 100%;
+      top: -50%;
+      left: 0;
+      background: linear-gradient(to bottom, rgba(105, 105, 105, 0.452) 0%, #ffffff 75%, #c2c2c2 100%);
+      animation: drop 7s 0s infinite;
+      animation-fill-mode: forwards;
+      animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+  }
+  
+  .line:nth-child(1){
+      margin-left: -25%}
+  .line::after{
+      animation-delay: 2s
+  }  
+  .line:nth-child(3){
+      margin-left: 25%
+  }
+  .line::after{
+      animation-delay: 2.5s
+  }    
+  @keyframes drop
+  { 
+  0%{
+      top: -50%
+  }100%{
+      top: 110%
+  }
+  }
+
+.skill-wrapper {
+    width: 100vw;
+    height: 100vh;
+    animation-duration: 2s;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.skill-text{
+    background-color: #575454;
+    z-index: 9999;
+    width: 80%;
+    height: 75vh;
+    margin-top: 10vh;
+}
+
+h1{
+    border-radius: 6px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    background: #202020b6;
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    padding: 1vh 1vh;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 5.5vh;
+    top: calc(var(--nav-height) + 5vh);
+    left: auto;
+    z-index: 9999;
+    position: absolute;
+    color: #fff;
+    cursor: none;
+}
+

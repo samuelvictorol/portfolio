@@ -22,7 +22,7 @@ a {
   text-decoration: none;
   font-size: 1.5rem;
   transition: all 0.1s;
-  cursor: none;
+  cursor: zoom-in;
 }
 
 .a-selected {
@@ -57,7 +57,7 @@ a {
 .trace {
   border-radius: 6px;
   width: 100%;
-  padding-bottom: .4rem;
+  padding-bottom: .2rem;
   margin-top: .3rem;
   border: 1px solid #000000;
   background: #232526;  /* fallback for old browsers */
@@ -81,6 +81,14 @@ a {
 
   a {
     font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 2px;
+  }
+
+  .a-selected {
+    padding-bottom: .2rem;
+    border-bottom: 2px solid #008dc5;
   }
 
   .nav-responsive {

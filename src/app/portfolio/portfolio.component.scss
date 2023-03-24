@@ -3,8 +3,8 @@
   padding-top: calc(var(--nav-height) + 7vh);
   width: 100vw;
   background: #232526;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #292b2c, #17191a);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #292b2c, #17191a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
    
   display: flex;
@@ -28,7 +28,7 @@
   background-repeat: no-repeat;
   background-position-x: center;
   transition: all .4s;
-  filter: brightness(.1);
+  filter: brightness(.4);
   cursor: pointer;
 }
 
@@ -45,7 +45,7 @@
     width: 80%;
     position: absolute;
     bottom: 2vh;
-    background: #000000d3;
+    background: #000000e3;
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 3px );
     padding: 1vh 1vw;

@@ -73,18 +73,26 @@
 }
 
 h1{
-    color: #6e6e6e;
+    color: #969696;
     margin: 0 0;
     padding: 2vh 0 0 0;
     font-family: 'Gloock', serif;
 }
 
+
 p{
-    font-size: 2vh;
     padding-bottom: 2vh;
-    color: #fff;
+    font-size: 2vh;
+    color: #d6d6d6;
     opacity: .8;
     line-height: 1.5;
+}
+
+#my-name {
+    padding-bottom: 0vh;
+    font-style: italic;
+    font-size: 2.2vh;
+    color: rgb(255, 255, 255);
 }
 
 h1::selection, p::selection {
@@ -92,11 +100,12 @@ h1::selection, p::selection {
     background-color: #e91919d2;
 }
 
+
 .img-sobre{
     animation-duration: 2s;
     z-index: 999;
-    width: 25vw;
-    height: 60vh;
+    width: 28vw;
+    height: 64vh;
     border-radius: 100%;
     border-top: 7px double #000000be;
     border-bottom: 7px double #000000be;
@@ -107,24 +116,33 @@ h1::selection, p::selection {
     filter: none;
 }
 
-#btn-cv {
+.btn-sobre {
     background-color: #fff;
     border-radius: 6px;
     outline: none;
     border: none;
     cursor: pointer;
-    position: absolute;
-    right: 1vw;
-    bottom: 1.4vh;
     padding: 6px 12px;
-    opacity: .8;
-    transition: all .2s;
+    opacity: 1;
+    transition: all .1s;
     font-size:1rem;
 }
 
-#btn-cv:hover {
-    opacity: .9;
-    transform: scale(1.2)
+.btn-sobre:hover {
+    opacity: .8;
+    transform: scale(1.01)
+}
+
+#btn-contato{
+    margin-left: 1vw;
+    color: #fff;
+    background-color: rgba(0, 102, 255, 0.938);
+}
+
+#btn-cv{
+    margin-left: 2px;
+    color: #ffffff;
+    background-color: rgb(31, 190, 163);
 }
 
 @media (max-width: 1000px) {  
