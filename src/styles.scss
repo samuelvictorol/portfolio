@@ -9,7 +9,10 @@
   width: 100vw;
   height: 100%;
   transition: all .4s;
-  background-color: white;
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #302f2f, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #302f2f, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   overflow-x: hidden;
     
 }
@@ -21,9 +24,8 @@ h1::selection, h2::selection, p::selection, input::selection, button::selection,
 
 body {
   overflow-x: hidden;
-
   // variaveis
-  --nav-height: 3vh;
+  --nav-height: 4vh;
   position: relative;
   // variaveis
   transition: all 0.5s;
@@ -53,7 +55,8 @@ body {
   background: #000000;
 }
 
-button, a {
+button, a, img {
   font-weight: normal;
+  cursor: pointer;
 }
 

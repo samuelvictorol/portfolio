@@ -10,7 +10,6 @@ export class NavComponent {
   constructor (protected navService: NavServicesService) {}
 
   ngOnInit(): void {
-    this.navService.darkModeExec()
   }
 
 

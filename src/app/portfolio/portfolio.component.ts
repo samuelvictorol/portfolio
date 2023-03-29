@@ -14,7 +14,6 @@ export class PortfolioComponent {
   ngOnInit(): void {
     this.navService.toggleHideNav(true)
     this.navService.mouseIn('portfolio', false)
-    this.navService.darkModeExec()
   }
 
    projects = [

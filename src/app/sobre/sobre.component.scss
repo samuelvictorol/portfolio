@@ -45,14 +45,13 @@
 
 .sobre-wrapper {
     width: 100vw;
-    height: 100vh;
     position: relative;
     background-color: rgb(241, 241, 241);
-    animation-duration: 2s;
+    animation-duration: .8s;
 }
 
 .container-sobre {
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -100,7 +99,6 @@ h1::selection, p::selection {
     background-color: #e91919d2;
 }
 
-
 .img-sobre{
     animation-duration: 2s;
     z-index: 999;
@@ -116,6 +114,14 @@ h1::selection, p::selection {
     filter: none;
 }
 
+.btns-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 .btn-sobre {
     background-color: #fff;
     border-radius: 6px;
@@ -125,8 +131,9 @@ h1::selection, p::selection {
     padding: 6px 12px;
     opacity: 1;
     transition: all .1s;
-    font-size:1rem;
+    font-size: 2vh;
 }
+
 
 .btn-sobre:hover {
     opacity: .8;
@@ -134,20 +141,23 @@ h1::selection, p::selection {
 }
 
 #btn-contato{
-    margin-left: 1vw;
+    color: #fff;
+    background-color: rgb(31, 190, 163);
+}
+
+#btn-port{
     color: #fff;
     background-color: rgba(0, 102, 255, 0.938);
 }
 
 #btn-cv{
-    margin-left: 2px;
+    background-color: rgba(4, 153, 190, 0.938);
     color: #ffffff;
-    background-color: rgb(31, 190, 163);
 }
 
 @media (max-width: 1000px) {  
     .sobre-wrapper {
-        height: 120vh;
+        height: 152vh;
     }
 
     .container-sobre {
@@ -178,4 +188,17 @@ h1::selection, p::selection {
     #btn-cv {
         right: 1rem;
     }
+
+}
+
+@media (max-width: 1200px) {
+    
+    .btn-sobre:last-child{
+        margin-top: 3.2vh;
+    }
+
+    .btn-sobre {
+        font-size:2.5vh;
+    }
+
 }

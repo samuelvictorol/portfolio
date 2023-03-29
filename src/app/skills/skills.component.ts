@@ -1,3 +1,4 @@
+import { NavServicesService } from './../nav-services.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent {
+
+  constructor (protected service: NavServicesService) {}
+
+  
 
 }

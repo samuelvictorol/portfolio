@@ -1,6 +1,6 @@
 import { NavServicesService } from './../nav-services.service';
 import { NavComponent } from './../nav/nav.component';
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 @Component({
   selector: 'app-sobre',
   templateUrl: './sobre.component.html',
@@ -8,12 +8,12 @@ import { Component } from '@angular/core';
 })
 export class SobreComponent{
   saudacao = ''
+  scroll = false
 
   constructor(protected navService: NavServicesService) {
   }
   ngOnInit(): void {
     this.getHour()
-    this.navService.darkModeExec()
     this.navService.mouseIn('sobre', false)
   }
 

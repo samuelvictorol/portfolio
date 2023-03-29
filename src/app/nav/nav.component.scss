@@ -30,26 +30,19 @@ a {
   border-bottom: 2px solid #ffffffd8;
 }
 
-.darkmode-btn {
-  filter: invert(.9);
-  opacity: .4;
-  width: 2rem;
-  height: 2rem;
-  transition: opacity .4s;
-  cursor: pointer;
+.a-selected-responsive {
+  padding-bottom: .2rem;
+  border: 3px solid #555555;
 }
 
-.darkmode-btn:hover {
-  opacity: 1;
-}
 
 .trace-wrapper {
-  z-index: 999;
+  z-index: 99999;
   position: fixed;
-  top: 1rem;
-  right: 1rem;
-  width: 55px;
-  height: 50px;
+  top: 2.8vh;
+  left: 1.5vh;
+  width: 40px;
+  height: 45px;
   cursor: pointer;
   transition: all .9s ease-in-out;
 }
@@ -59,10 +52,10 @@ a {
   width: 100%;
   padding-bottom: .2rem;
   margin-top: .3rem;
-  border: 1px solid #000000;
+  border: .5px solid #000000;
   background: #232526;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to top, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   transition: all 0.2s ease-in-out;
 }
 
@@ -81,22 +74,19 @@ a {
 
   a {
     font-family: 'Montserrat', sans-serif;
-    background-color: #fff;
+    background: #000000;  /* fallback for old browsers */
     border-radius: 6px;
-    padding: 2px;
+    padding: 1vh;
+    color: #fff;
   }
 
-  .a-selected {
-    padding-bottom: .2rem;
-    border-bottom: 2px solid #008dc5;
-  }
 
   .nav-responsive {
   position: fixed;
   top: 0rem;
   right: 0rem;
   gap: 1rem;
-  background: rgba(255, 255, 255, 0.451);
+  background: rgba(0, 0, 0, 0.637);
   backdrop-filter: blur( 10px );
   -webkit-backdrop-filter: blur( 4px );
   border-radius: 10px;
@@ -111,13 +101,7 @@ a {
   transition: all 0.4s;
 }
 
-.darkmode-btn {
-  filter: none;
-  opacity: 1;
-}
-
 .nav-link-responsive {
-  color: black;
   z-index: 999;
 }
 }

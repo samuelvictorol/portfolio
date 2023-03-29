@@ -1,15 +1,35 @@
 
-    <div class="carousel" id="carousel">
-        <div *ngFor="let project of projects"
-            style="background-image: url('{{ project.img }}'); background-size: cover;"
-            class="project-item animate__animated animate__fadeInDown"
-            (click)="cardUrl(project.url)"> 
-            <div class="project-text ">
-                <h1>{{ project.title }}</h1>
-                <p class="animate__animated animate__fadeInDown" >
-                    {{ project.desc }}
-                </p>
-                <button class="project-url" *ngIf="project.privacity != 'privado'">Ver Projeto</button>
-            </div>
+<h2 class="animate__animated animate__slideInDown ">Meu Portfólio</h2>	
+<div class="carousel" id="carousel" >
+    <div *ngFor="let project of projects"
+        style="background-image: url('{{ project.img }}'); background-size: cover;"
+        class="project-item animate__animated animate__fadeInDown"
+        (click)="cardUrl(project.url)"> 
+        <div class="project-text ">
+            <h1>{{ project.title }}</h1>
+            <p class="animate__animated animate__fadeInDown" >
+                {{ project.desc }}
+            </p>
+            <button class="project-url" *ngIf="project.privacity != 'privado'">Ver Projeto</button>
         </div>
     </div>
+    <div class="fale-comigo">
+        <div class="icon-text">
+            <img class="fale-comigo-logo" id="wpp-svg" src="assets/wpp.svg" alt="logo whatsapp">
+            <a class="a-falecmg"  href="#">+55 61 9 8174-8795</a>
+        </div>
+        <div class="icon-text">
+            <img class="fale-comigo-logo" id="wpp-svg" src="assets/github.svg" alt="logo whatsapp">
+            <a class="a-falecmg" href="https://github.com/samuelvictorol" target="_blank">samuelvictorol</a>
+        </div>
+        <div class="icon-text">
+            <img class="fale-comigo-logo" id="wpp-svg" src="assets/linkedin.svg" alt="logo whatsapp">
+            <a class="a-falecmg" target="_blank"  href="https://www.linkedin.com/in/samuel-victor-samvctr/">Samuel Victor Oliveira Lima</a>
+        </div>
+        <div class="icon-text">
+            <img (click)="navService.mouseIn('contato', false)" class="fale-comigo-logo" id="wpp-svg" src="assets/email.svg" alt="logo whatsapp">
+            <a class="a-falecmg" (click)="navService.mouseIn('contato', false)">Me Envie um Email</a>
+        </div>
+        
+    </div>
+</div>
