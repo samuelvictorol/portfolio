@@ -25,6 +25,10 @@ export class PortfolioComponent {
      { title: 'Portfólio Pessoal', desc: 'Criação do meu Portfólio Pessoal utilizando Angular, deploy no GitHub Pages e utiliza EmailJS na tela de contatos para enviar formulário pro meu email profissional.', url: 'https://github.com/samuelvictorol/portfolio', img: 'assets/portImg.png', },
   ];
 
+  goToLink(link: string) {
+    window.location.href = link
+  }
+
   cardUrl(cardUrl: any) {
     if(cardUrl.includes('.com')){
       window.open(cardUrl, '_blank');

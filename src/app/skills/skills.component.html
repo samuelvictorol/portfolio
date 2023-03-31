@@ -1,10 +1,14 @@
 <div class="skill-wrapper ">
-    <h1 class="animate__animated animate__bounceInUp">Minhas Skills</h1>
+    <h2 class="animate__animated animate__bounceInUp">Minhas Skills</h2>
     <div class="skill-text">
+        <div *ngFor="let skill of skills" style="flex: 20%; display:flex; flex-direction:column;align-items: center; gap: 1vh;  ">
+            <p>{{ skill.title }}</p>
+            <img class="skill-logo" src="{{ skill.img }}" alt="">
+        </div>
     </div>
     <div class="line"></div>
     <div class="line"></div>
     <div class="skill-next">
         <button id="next" (click)="service.mouseIn('portfolio', false)">Ver skills em prática </button>
     </div>
-</div>
+    </div>

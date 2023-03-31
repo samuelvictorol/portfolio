@@ -59,15 +59,35 @@
 }
 
 .skill-text{
-    background: #1818188a;
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 5px );
+    background: #1818185d;
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
     width: 80%;
-    height: 75vh;
-    margin-top: 10vh;
+    height: 70vh;
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 5vh;
+    padding-bottom: 1vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    z-index: 9998
+
 }
 
-h1{
+.skill-logo {
+    width:6vw;
+    filter: invert(1);
+    
+}
+
+p{
+    text-align: center;
+    animation: pisca alternate infinite 2s;
+}
+
+h2{
     text-align: center;
     margin: 0px 0px 0px 0px;
     padding: 3vh 0px 3vh 0px;
@@ -75,7 +95,7 @@ h1{
     background: #f5f5f5f9;
     backdrop-filter: blur( 2px );
     -webkit-backdrop-filter: blur( 2px );
-    top: 0vh;
+    top: .6vh;
     left: auto;
     z-index: 9999;
     position: absolute;
@@ -84,14 +104,24 @@ h1{
     transition: all 1s;
 }
 
+@keyframes pisca {
+   from {
+        color: #fff;
+        filter: drop-shadow(0 0mm 1px #1d7cca);
+    }
 
-.skill-wrapper:hover h1 {
+    to {
+        color: #1d7cca;
+    }
+}
+
+.skill-wrapper:hover h2 {
     top: 10vh;
 }
 
 .skill-next {
     position: absolute;
-    bottom: .5vh;
+    bottom: 1.5vh;
     right: 1vw;
 }
 
@@ -101,10 +131,12 @@ h1{
     background-color: transparent;
     cursor: pointer;
     padding: 1vh 1vh;
+    animation: pisca 1.5s infinite alternate;
 }
 
 #next:hover{
-    color: #00aeff;
+    animation: none;
+    color: #a6ff00;
 }
 
 @media (max-width:1200px) {
