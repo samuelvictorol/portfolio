@@ -8,14 +8,16 @@ import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
   styleUrls: ['./contato.component.scss']
 })
 export class ContatoComponent {
-
+  angularScript = [
+    { isThis: ''}
+  ]
   constructor(private navService: NavServicesService){}
 
   ngOnInit(): void {
     this.navService.mouseIn('contato', false)
   }
 
-  public sendEmail(e: Event) {
+    protected sendEmail(e: Event) {
     e.preventDefault();
     emailjs.sendForm('service_wnvn0tx', 'template_t9uy56i', e.target as HTMLFormElement, 'KD15sQJ-xFghabjnw')
     .then((result: EmailJSResponseStatus) => {
@@ -31,5 +33,7 @@ export class ContatoComponent {
     }, 2000)
   }
   
+
+
 
 }

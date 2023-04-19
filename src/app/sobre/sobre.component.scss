@@ -46,7 +46,7 @@
 .sobre-wrapper {
     width: 100vw;
     position: relative;
-    background-color: rgb(241, 241, 241);
+    background: linear-gradient(to bottom, #ffffff, #ffffff, #e9e9e925); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     animation-duration: .8s;
 }
 
@@ -72,7 +72,7 @@
 }
 
 h1{
-    color: #969696;
+    color: #dadada;
     margin: 0 0;
     padding: 2vh 0 0 0;
     font-family: 'Gloock', serif;
@@ -82,7 +82,7 @@ h1{
 p{
     padding-bottom: 2vh;
     font-size: 2vh;
-    color: #d6d6d6;
+    color: #e7e6e6;
     opacity: .8;
     line-height: 1.5;
 }
@@ -91,7 +91,8 @@ p{
     padding-bottom: 0vh;
     font-style: italic;
     font-size: 2.2vh;
-    color: rgb(255, 255, 255);
+    font-weight: bold;
+    color: rgb(177, 177, 177);
 }
 
 h1::selection, p::selection {
@@ -123,41 +124,31 @@ h1::selection, p::selection {
 }
 
 .btn-sobre {
-    background-color: #fff;
+    background-color: transparent;
     border-radius: 6px;
     outline: none;
     border: none;
     cursor: pointer;
     padding: 6px 12px;
-    opacity: 1;
+    opacity: .8;
     transition: all .1s;
+    color: #e4e4e4d3;
     font-size: 2vh;
+    border: 3px solid black;
 }
 
 
 .btn-sobre:hover {
-    opacity: .8;
-    transform: scale(1.01)
-}
-
-#btn-contato{
-    color: #fff;
-    background-color: rgba(0, 102, 255, 0.938);
-}
-
-#btn-port{
-    color: #fff;
-    background-color: rgb(60, 118, 155);
-}
-
-#btn-cv{
-    background-color: rgba(4, 153, 190, 0.938);
-    color: #ffffff;
+    transform: scale(1.02);
+    opacity: 1;
+    color: white;
 }
 
 @media (max-width: 1000px) {  
     .sobre-wrapper {
         height: 152vh;
+        background: linear-gradient(to bottom, #86868625, #ffffff, #e9e9e925); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     }
 
     .container-sobre {
@@ -170,7 +161,6 @@ h1::selection, p::selection {
     }
 
     .sobre-text {
-        position:static;  
         // margin: 10vh auto; 
         max-width: 100vw;  
         border-radius: 0;

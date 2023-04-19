@@ -90,16 +90,16 @@ p{
 h2{
     text-align: center;
     margin: 0px 0px 0px 0px;
-    padding: 3vh 0px 3vh 0px;
+    padding: 4vh 0px 3vh 0px;
     width: 100vw;
     background: #f5f5f5f9;
     backdrop-filter: blur( 2px );
     -webkit-backdrop-filter: blur( 2px );
-    top: .6vh;
+    top: 0vh;
     left: auto;
-    z-index: 9999;
+    z-index: 999;
     position: absolute;
-    color: #000;
+    color: #2c2c2c;
     cursor: none;
     transition: all 1s;
 }
@@ -125,6 +125,7 @@ h2{
     right: 1vw;
 }
 
+
 #next{
     transition: all .5s;
     color: #fff;
@@ -136,7 +137,7 @@ h2{
 
 #next:hover{
     animation: none;
-    color: #a6ff00;
+    color: #ffffff;
 }
 
 @media (max-width:1200px) {
@@ -145,5 +146,16 @@ h2{
     }
     .skill-wrapper:hover h1 {
         top: 0vh;
+    }
+    #skill-name{
+        display: none;
+    }
+    .skill-text{
+        height: 25vh;
+        justify-content: space-evenly;
+    }
+
+    .skill-logo{
+        width: 14vw;
     }
 }

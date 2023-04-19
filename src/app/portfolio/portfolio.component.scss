@@ -15,8 +15,8 @@ h2{
   padding-top: calc(var(--nav-height) + 2vh);
   width: 100vw;
   background: #232526;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #292b2c, #17191a);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #292b2c, #17191a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to left, #292b2c, #17191a);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #292b2c, #17191a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -39,7 +39,7 @@ h2{
 }
 
 .project-item:hover  {
-  border-left: 16px ridge #a6ff00;
+  border-left: 16px ridge #464646;
   filter: none;
 }
 
@@ -141,7 +141,7 @@ a{
 }
 
 a:hover{
-  color: #a6ff00  ;
+  color: #2fa9e2  ;
 }
 
 @media (max-width: 1000px) {  

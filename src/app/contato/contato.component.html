@@ -1,14 +1,14 @@
 
-<div class="contato-wrapper animate__animated animate__fadeIn">
+<div class=" contato-wrapper animate__animated animate__fadeIn">
+    <h1 class="h1-contact animate__animated animate__slideInDown">Fale Comigo</h1>
     <div class="text-contact">
-        <h1 class="h1-contact">Fale Comigo</h1>
         <h2 class="h2-contact">Resta alguma dúvida? Preencha os campos abaixo com os seguintes dados que em breve entrarei em contato.</h2>
     </div>
     <form class="contact-form" (submit)="sendEmail($event)">
         <input placeholder="Seu Nome" required type="text" name="user_name">
-        <input autocomplete="on" placeholder="ex: seuemail@email.com" type="email" required name="user_email">
+        <input autocomplete="on" placeholder="Email (seuemail@email.com)" type="email" required name="user_email">
         <textarea placeholder="Mensagem" name="message" required></textarea>
-        <input id="btn-submit" type="submit" value="Entrar em Contato">
+        <input id="btn-submit" type="submit" value="entrar em contato">
     </form>
 </div>
 <app-end></app-end>

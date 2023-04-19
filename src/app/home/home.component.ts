@@ -1,4 +1,4 @@
-adimport { Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { Component } from '@angular/core';
 import { NavServicesService } from '../nav-services.service';
 
@@ -13,7 +13,6 @@ export class HomeComponent {
 
   ngOnInit(): void {
     this.navService.mouseIn('home', false)
-    
   }
 
   startTrip(rotaString: string) {
@@ -24,7 +23,5 @@ export class HomeComponent {
     }, 800)
 
   }
-
-
 
 }

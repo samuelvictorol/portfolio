@@ -2,7 +2,7 @@
     <h2 class="animate__animated animate__bounceInUp">Minhas Skills</h2>
     <div class="skill-text">
         <div *ngFor="let skill of skills" style="flex: 20%; display:flex; flex-direction:column;align-items: center; gap: 1vh;  ">
-            <p>{{ skill.title }}</p>
+            <p id="skill-name">{{ skill.title }}</p>
             <img class="skill-logo" src="{{ skill.img }}" alt="">
         </div>
     </div>
