@@ -1,9 +1,9 @@
 .contato-wrapper {
     width: 100vw;
-    height: 100vh;
+    height: 92vh;
     background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to top, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #292929, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     display: flex;
     flex-direction: column;
@@ -14,7 +14,7 @@
 
 .text-contact {
     width: 100vw;
-    height: 5vh;
+    height: 4vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,11 +42,10 @@
 
 .contact-form {
     height: 70vh;
-    width: 80vw;
+    width: 50vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     gap: 2vh;
 }
 
@@ -56,35 +55,35 @@ input, textarea {
     border: none;
     border-bottom: 2px dashed black;
     text-decoration: none;
-    background: rgba( 255, 255, 255, 0.25 );
+    background: #000000a6;
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
     border: 1px solid rgb(0, 0, 0);
     transition: all .2s;
-    height: 8vh;
+    height: 5vh;
     font-size: 1.4rem;
     padding-left: .5vw;
     color: #c0ebff;
 }
 
 input::placeholder, textarea::placeholder {
-    color: #f0f0f0;
+    color: #b9b9b9;
     opacity: .5;
     padding-left: 1vw;
 }
 
 textarea {
     padding-top: 1vh;
-    min-width: 80vw;
+    min-width: 50vw;
+    max-width: 50vw;
     min-height: 20vh;
-    max-width: 80vw;
     max-height: 20vh;
 }
 
 input:focus, textarea:focus {
     box-shadow: 0 0 0 0;
-    border-bottom: 4px solid rgba(0, 0, 0);
+    border-bottom: 4px solid #313131;
     outline: 0;
     border-radius: 8px;
     padding-left: 1rem;
@@ -96,9 +95,10 @@ input:focus, textarea:focus {
     height: 8vh;
     width: calc(100% + .5vw);
     cursor: pointer;
-    background-color: #b8b8b8;
+    background-color: transparent;
     transition: all .2s;
-    color: #383838;
+    color: rgba(255, 255, 255, 0.692);
+    border: 4px solid black;
     padding-left: 0vw;
     font-size: 2rem;
     font-weight: bolder;
@@ -106,18 +106,21 @@ input:focus, textarea:focus {
 }
 
 #btn-submit:hover {
-   opacity: .6;
+    opacity: 1;
+    color: white;
+    border-color: white;
 }
 
 @media (max-width: 450px) {
     .contato-wrapper {
-        height: 110vh;
+        height: 92vh;
         background: #000000;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to bottom, #302f2f, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
     }
     .contact-form {
+        width: 70vw;
         margin-top: 4vh;
         margin-bottom: 10vh;
     }
@@ -137,4 +140,12 @@ input:focus, textarea:focus {
         width: 110%;
         font-size: 1.5rem;
     }
+    textarea {
+        padding-top: 1vh;
+        min-width: 70vw;
+        max-width: 70vw;
+        min-height: 20vh;
+        max-height: 20vh;
+    }
+    
 }
