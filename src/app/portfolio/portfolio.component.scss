@@ -142,6 +142,32 @@ a:hover{
   color: #2fa9e2  ;
 }
 
+.span{
+  position: absolute;
+  right: -1rem;
+  top: -1rem;
+  z-index: 99;
+  font-size: 2vh;
+  background-color: #13d0ff;
+  animation: 2s pisca infinite alternate;
+  padding: 2vh;
+  color: #fff;
+  border-radius: 6px;
+}
+
+
+@keyframes pisca {
+  from {
+       filter: drop-shadow(0 0mm 1px #1d7cca);
+   }
+
+   to {
+      background-color: #fff;
+      color: #13d0ff;
+   }
+}
+
+
 @media (max-width: 1000px) {  
 
   .project-item {
