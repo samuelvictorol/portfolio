@@ -5,13 +5,12 @@ import { Router } from '@angular/router';
   providedIn: 'root'
 })
 export class NavServicesService {
-  toggleResposiveNav = true
+  toggleResposiveNav = false
 
   constructor(private router: Router) { }
 
   responsiveNav() {
     this.toggleResposiveNav = !this.toggleResposiveNav
-    const traceWrapper = document.querySelector('.trace-wrapper') as HTMLElement
     const navResponsive = document.querySelector('.nav-responsive') as HTMLElement
     if(this.toggleResposiveNav) {
       navResponsive.style.cssText = 'right: 0rem'
