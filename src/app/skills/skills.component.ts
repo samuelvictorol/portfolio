@@ -17,7 +17,7 @@ export class SkillsComponent {
     { title: 'Typescript', img: 'assets/ts.svg' },
     { title: 'SQL', img: 'assets/SQL.svg' },
     { title: 'Figma', img: 'assets/figma.svg' },
-    { title: 'Axure', img: 'assets/axure.svg' },
+    { title: 'Docker', img: 'assets/docker.svg' },
 
   ]
 
