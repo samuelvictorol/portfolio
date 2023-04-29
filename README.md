@@ -1,5 +1,5 @@
 # Portfólio | Samuel Victor
-- Meu portfólio pessoal, ainda em construção.
+- Meu portfólio pessoal utilizando Angular.
 - Disponível em:
 <a href="https://samuelvictorol.github.io/portfolio/"  target="_blank">Portfólio</a>
 
