@@ -44,10 +44,13 @@
 }
 
 .sobre-wrapper {
-    height: 90vh;
+    height: 100vh;
     width: 100vw;
     position: relative;
-    background: rgb(7, 7, 7);
+    background: #ADA996;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #EAEAEA, #DBDBDB, #F2F2F2, #b1b1b1);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #EAEAEA, #DBDBDB, #F2F2F2, #b1b1b1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
     animation-duration: .8s;
 }
 
@@ -61,7 +64,7 @@
 }
 
 .sobre-text {
-    background-color: #2b2b2b;
+    background-color: #141414b9;
     border-radius: 6px;
     max-width: 35vw;
     z-index: 999;
@@ -69,7 +72,8 @@
     position: relative;
     animation-duration: 1s;
     padding-bottom: 4vh;
-
+    backdrop-filter: blur( 4px );
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.555);
 }
 
 h1{
@@ -99,15 +103,14 @@ p{
 
 h1::selection, p::selection {
     color: #fff;
-    background-color: #e91919d2;
+    background-color: #3b6969d2;
 }
 
 .img-sobre{
     animation-duration: 2s;
     z-index: 999;
-    width: 28vw;
-    height: 64vh;
-    border-radius: 100%;
+    width: 26vw;
+    height: 55vh;
     border-top: 7px double #424242be;
     border-bottom: 7px double #424242be;
     border-radius: 120px;
@@ -126,7 +129,7 @@ h1::selection, p::selection {
 }
 
 .btn-sobre {
-    background-color: transparent;
+    background-color: rgb(245, 245, 245);
     border-radius: 6px;
     outline: none;
     border: none;
@@ -134,16 +137,16 @@ h1::selection, p::selection {
     padding: 6px 12px;
     opacity: .8;
     transition: all .1s;
-    color: #e4e4e4d3;
+    color: #353535f8;
+    font-weight: bold;
     font-size: 2vh;
-    border: 3px solid black;
+    border: 3px solid rgb(41, 41, 41);
 }
 
 
 .btn-sobre:hover {
     transform: scale(1.02);
     opacity: 1;
-    color: white;
 }
 
 @media (max-width: 1000px) {  

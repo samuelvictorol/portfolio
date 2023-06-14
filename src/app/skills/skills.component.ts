@@ -10,7 +10,7 @@ export class SkillsComponent {
   skills = [
     { title: 'Vue.js', img: 'assets/vue.svg' },
     { title: 'Angular Framework', img: 'assets/angular.svg' },
-    { title: 'Django', img: 'assets/django.svg' },
+    { title: 'Express.js', img: 'assets/django.svg' },
     { title: 'Git', img: 'assets/git.svg' },
     { title: 'Python ', img: 'assets/py.svg' },
     { title: 'Javascript', img: 'assets/js.svg' },

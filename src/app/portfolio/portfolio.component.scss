@@ -14,8 +14,11 @@ h2{
 .carousel {
   padding-top: calc(var(--nav-height) + 2vh);
   width: 100vw;
-  background: #000000;  
   display: flex;
+  background: #ADA996;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #EAEAEA, #DBDBDB, #F2F2F2, #9c9c9c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #EAEAEA, #DBDBDB, #F2F2F2, #9c9c9c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
@@ -106,7 +109,7 @@ p{
 .fale-comigo {
   width: 100vw;
   height: 20vh;
-  background: #797b7d34;
+  background: #1a1a1ae0;
   backdrop-filter: blur( 4px );
   -webkit-backdrop-filter: blur( 3px );
   padding-left: 20vw;
@@ -139,7 +142,8 @@ a{
 }
 
 a:hover{
-  color: #2fa9e2  ;
+  opacity: 1;
+  color: #13b4ff  ;
 }
 
 .span{

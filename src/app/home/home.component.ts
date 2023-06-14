@@ -17,7 +17,7 @@ export class HomeComponent {
 
   startTrip(rotaString: string) {
     const btnHome = document.querySelector('.home-wrapper') as HTMLElement
-    btnHome.style.cssText = 'animation: backOutUp; animation-duration: 1s; --animate-repeat: 0; --animate-delay: 10s;'
+    btnHome.style.cssText = 'animation: fadeOut; animation-duration: 1s; --animate-repeat: 0; --animate-delay: 10s;'
     setTimeout(() => {
       this.navService.mouseIn(rotaString, false)
     }, 800)
