@@ -1,25 +1,48 @@
 <div class="sobre-wrapper animate__animated animate__fadeIn animate__faster">
     <div class="container-sobre">
-        <img class="img-sobre" src="assets/eu2.png" alt= "foto de Samuel Victor">
         <div class="sobre-text animate__animated animate__fadeInDown">
             <h1>Olá, {{ saudacao }}!</h1>
-            <p id="my-name">Me chamo Samuel Victor,</p>
-            <p>Sou programador frontend na Cast Group e estudante de Engenharia de Software na Universidade de Brasília. Atualmente trabalho no Sistema de Tarifas do Banco da Amazônia utilizando Angular, Materials e Express.js. 
+            <p id="my-name">Meu nome é Samuel Victor,</p>
+            <p>Sou Desenvolvedor Fullstack na Cast Group com foco no Frontend, formado em Análise e Desenvolvimento de Sistemas e estudante de Engenharia de Software na Universidade de Brasília. Atualmente trabalho no Sistema de Tarifas do Banco da Amazônia utilizando Vue3, Quasar Framework, Express.js e Spring. 
                 <br>
                 <br>
-                Iniciando minha carreira como estagiário, utilizava Entity e Angular como frameworks para projetos fullstack. Após a efetivação, entrei em diversos projetos internos de grandes bancos. Hoje possuo experiência profissional com equipes multinacionais as quais atuávamos em projetos da CAIXA e do BASA, trabalhando com tecnologias como Angular, Vue, Typescript, Figma e Git.
+                Iniciando minha carreira como estagiário, utilizava Entity e Angular como frameworks para projetos fullstack. Após a efetivação, entrei em diversos projetos internos de grandes bancos. Hoje possuo experiência profissional com equipes de todo o território nacional as quais atuávamos em projetos da CAIXA e do BASA, trabalhando com tecnologias como Angular, Vue, (tanto com Typescript quanto JavaScript), Azure, Axure, Figma e Gitlab.
             </p>
             <div class="btns-wrapper">
                 <button class="btn-sobre" id="btn-cv" (click)="baixarCV()">Ver Currículo</button>
                 <button class="btn-sobre" id="btn-port" (click)="navService.mouseIn('portfolio', false)">Ver Portfólio</button>
                 <button class="btn-sobre" id="btn-contato" (click)="navService.mouseIn('contato', false)">Fale Comigo</button>
             </div>
+            <div class="svgs-wrapper">
+
+            </div>
         </div>
     </div>
     <div class="line"></div>
     <div class="line"></div>
 </div>
-<div>
-    <app-skills></app-skills>
+<div class="fale-comigo">
+    <div class="icon-text">
+        <a target="_blank" href="https://wa.me/5561981748795?text=Ola,%20Samuel.%20Gostaria%20de%20fazer%20uma%20proposta%20de%20Desenvolvimento%20de%20Software.%20">
+            <img class="fale-comigo-logo" id="wpp-svg" src="assets/wpp.svg" alt="logo whatsapp">
+        </a>
+        <a class="a-falecmg" target="_blank" href="https://wa.me/5561981748795?text=Ola,%20Samuel.%20Gostaria%20de%20fazer%20uma%20proposta%20de%20Desenvolvimento%20de%20Software.%20">Me Envie uma Mensagem</a>
+    </div>
+    <div class="icon-text">
+        <a href="https://github.com/samuelvictorol" target="_blank">
+            <img class="fale-comigo-logo" id="wpp-svg" src="assets/github.svg" alt="logo whatsapp">
+        </a>
+        <a class="a-falecmg" href="https://github.com/samuelvictorol" target="_blank">samuelvictorol</a>
+    </div>
+    <div class="icon-text">
+        <a href="">
+            <img class="fale-comigo-logo" id="wpp-svg" src="assets/linkedin.svg" alt="logo whatsapp">
+        </a>
+        <a class="a-falecmg" target="_blank"  href="https://www.linkedin.com/in/samuel-victor-samvctr/">Samuel Victor</a>
+    </div>
+    <div class="icon-text">
+        <img (click)="navService.mouseIn('contato', false)" class="fale-comigo-logo" id="wpp-svg" src="assets/email.svg" alt="logo whatsapp">
+        <a class="a-falecmg" (click)="navService.mouseIn('contato', false)">Me Envie um Email</a>
+    </div>
 </div>
 <app-end></app-end>

@@ -44,18 +44,17 @@
 }
 
 .sobre-wrapper {
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
     position: relative;
     background: #000000;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
     animation-duration: .8s;
 }
 
 .container-sobre {
-    height: 90vh;
+    height: 95vh;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -132,29 +131,27 @@ h1::selection, p::selection {
 }
 
 .btn-sobre {
-    background-color: rgb(245, 245, 245);
-    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
     outline: none;
     border: none;
     cursor: pointer;
-    padding: 6px 12px;
-    opacity: .8;
-    transition: all .1s;
+    padding: 1rem;
+    transition: all .2s linear;
     color: #353535f8;
     font-weight: bold;
-    font-size: 2vh;
-    border: 3px solid rgb(41, 41, 41);
+    font-size: 1.8vh;
 }
 
 
 .btn-sobre:hover {
-    transform: scale(1.02);
-    opacity: 1;
+    color: #fff;
+    background-color: #000000f8;
 }
 
 @media (max-width: 1000px) {  
     .sobre-wrapper {
-        height: 160vh;
+        padding-top: 4.2rem;
+        height: 97vh;
     }
 
     .container-sobre {
@@ -188,9 +185,11 @@ h1::selection, p::selection {
 }
 
 @media (max-width: 1200px) {
-    
-    .btn-sobre:last-child{
-        margin-top: 3.2vh;
+    .a-falecmg {
+        display: none;
+      }
+    .sobre-wrapper {
+        padding-top: 3rem;
     }
 
     .btn-sobre {
@@ -198,3 +197,77 @@ h1::selection, p::selection {
     }
 
 }
+
+@media(max-width:420px){
+    .btn-sobre:last-child{
+        margin-top: 1rem;
+    }
+}
+
+.fale-comigo {
+    height: 20vh;
+    background: #1a1a1ae0;
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 3px );
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+    justify-content: space-evenly;
+  }
+  
+  .icon-text {
+    width: 20vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5vw;
+  }
+  
+  .fale-comigo-logo {
+    width: 40px;
+    filter: invert(.8);
+  }
+  
+  a{
+    color: #a1a1a1;
+    transition: all 1s;
+    opacity: .8;
+    outline: none;
+    text-decoration: none;
+  }
+  
+  a:hover{
+    opacity: 1;
+    color: #13b4ff  ;
+  }
+  
+  .span{
+    position: absolute;
+    right: -1rem;
+    top: -1rem;
+    z-index: 99;
+    font-size: 2vh;
+    background-color: #13d0ff;
+    animation: 2s pisca infinite alternate;
+    padding: 2vh;
+    color: #fff;
+    border-radius: 6px;
+  }
+  
+  
+  @keyframes pisca {
+    from {
+         filter: drop-shadow(0 0mm 1px #1d7cca);
+     }
+  
+     to {
+        background-color: #fff;
+        color: #13d0ff;
+     }
+  }
+  
+  
