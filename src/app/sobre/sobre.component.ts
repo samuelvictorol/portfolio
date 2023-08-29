@@ -34,7 +34,7 @@ export class SobreComponent{
   }
 
   baixarCV(){
-    const pdfUrl = 'assets/cvAtualizado.pdf'
+    const pdfUrl = 'assets/cv.pdf'
     window.open(pdfUrl, '_blank');
   }
 
