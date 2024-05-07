@@ -18,7 +18,7 @@ export class PortfolioComponent {
 
    projects = [
      { img:'assets/solarsystem.png', title: 'Sistema Solar 3D', desc: 'Um projeto pessoal que consiste em uma viagem pelo Sistema Solar em 3D utilizando Vue3 e Three.js', url:'https://sistema-solar-3js.netlify.app/'  },
-     { title: 'Devmon', img:'assets/devmon.png', url:"https://devmon.netlify.app/", desc: 'Jogo de ataque e esquiva utilizando Javascript + Vue3. Jogo rápido ja conta com o modo singleplayer e modo multiplayer online em desenvolvimento.', },
+     { title: 'FavTab', img:'assets/favtab.png', url:"https://favtab.netlify.app/", desc: 'WebApp Mobile First de gerenciamento e network de repertórios para Músicos utilizando Vue3 e Express.', },
      { title: 'Pixshop, Integração OpenPix', desc: 'Aplicação fullstack integrando a plataforma de pagamento OpenPix. Possui também um CRUD com filtros e webscrapping para popular o banco. Foi utilizado os frameworks Vue e Express.', url:'https://github.com/samuelvictorol/api-pixshop', img:'assets/pixshop.png',},
      { span: true,title: 'UnB na Mão', desc: 'WebApp Mobile First para facilitar a vida do estudante universitário da UnB, acelerando o acesso aos tópicos mais utilizados pelos alunos. Além de ter um sistema de cadastro de vagas e diferentes tipos de perfis com funcionalidades de ações diferentes.', url: 'https://unbnamao.netlify.app/', img: 'assets/unbnamao.png'},
      { title: 'Integração Paypal Angular', desc: 'Aplicação Web com integração com API do PayPal, Cart dinâmico utilizando diversos conceitos de Angular Framework e estilizado usando Bootstrap.', url: 'https://github.com/samuelvictorol/PayPal-Integration', img: 'assets/paypal.png', },
