@@ -17,13 +17,13 @@ export class PortfolioComponent {
   }
 
    projects = [
-     { img:'assets/solarsystem.png', title: 'Sistema Solar 3D', desc: 'Um projeto pessoal que consiste em uma viagem pelo Sistema Solar em 3D utilizando Vue3 e Three.js', url:'https://sistema-solar-3js.netlify.app/'  },
      { title: 'FavTab', img:'assets/favtab.png', url:"https://favtab.netlify.app/", desc: 'WebApp Mobile First de gerenciamento e network de repertórios para Músicos utilizando Vue3 e Express.', },
-     { title: 'Pixshop, Integração OpenPix', desc: 'Aplicação fullstack integrando a plataforma de pagamento OpenPix. Possui também um CRUD com filtros e webscrapping para popular o banco. Foi utilizado os frameworks Vue e Express.', url:'https://github.com/samuelvictorol/api-pixshop', img:'assets/pixshop.png',},
+     { title: `Instituto Átika`, desc: 'Este projeto social sem fins lucrativos incentiva crianças e adolescentes sem condições financeiras a praticar esportes como o futvôlei. Os produtos vendidos serão revertidos em doações. A landing page foi desenvolvida com responsividade. O deploy automatizado garante atualizações rápidas e seguras.', url:'https://institutoatika.netlify.app/', img:'assets/atika.png',},
+     { img:'assets/solarsystem.png', title: 'Sistema Solar 3D', desc: 'Um projeto pessoal que consiste em uma viagem pelo Sistema Solar em 3D utilizando Vue3 e Three.js', url:'https://sistema-solar-3js.netlify.app/'  },
      { span: true,title: 'UnB na Mão', desc: 'WebApp Mobile First para facilitar a vida do estudante universitário da UnB, acelerando o acesso aos tópicos mais utilizados pelos alunos. Além de ter um sistema de cadastro de vagas e diferentes tipos de perfis com funcionalidades de ações diferentes.', url: 'https://unbnamao.netlify.app/', img: 'assets/unbnamao.png'},
+     { title: 'Pixshop, Integração OpenPix', desc: 'Aplicação fullstack integrando a plataforma de pagamento OpenPix. Possui também um CRUD com filtros e webscrapping para popular o banco. Foi utilizado os frameworks Vue e Express.', url:'https://github.com/samuelvictorol/api-pixshop', img:'assets/pixshop.png',},
      { title: 'Integração Paypal Angular', desc: 'Aplicação Web com integração com API do PayPal, Cart dinâmico utilizando diversos conceitos de Angular Framework e estilizado usando Bootstrap.', url: 'https://github.com/samuelvictorol/PayPal-Integration', img: 'assets/paypal.png', },
      { title: 'Protótipo alta fidelidade', desc: 'Protótipos de uma aplicação web de alta fidelidade, de forma que seja possível: pesquisar, incluir, alterar e excluir (CRUD) conhecimentos e certificações dos colaboradores da Cast Group, a fim de facilitar a visualização de forma visual e intuitiva para os gestores responsáveis.', img: 'assets/prot.png', url: 'https://github.com/samuelvictorol/PrototipoFigma-CastGroup' , },
-     { title: `Amazon Alexa Skill's`, desc: 'Desenvolvimento de skills para Amazon Alexa, utilizando Lambda Functions e JavaScript. Skills de emergência de saúde e sequestro integrada ao Twilio para serviços de mensagens SMS e WhatsApp.', url:'https://github.com/samuelvictorol/AmazonAlexa-EmergencySkill', img:'assets/alexa.png',},
      { title: 'Manipulador de PDF', desc: 'Script em python que manipula arquivos em PDF, como comprimir e separar.', url:'https://github.com/samuelvictorol/Manipula-PDF-python', img:'assets/pdfcomp.png',},
 
   ];
