@@ -9,7 +9,8 @@ npm
 
 
 
-  <a (click)="navService.darkMode()"><img class="darkmode-btn"ng build --configuration production --base-href "https://samuelvictorol.github.io/portfolio/"  &&  ngh --dir dist/portfolio src="assets/darkmodebtn.svg" alt=""></a>
+  <a (click)="navService.darkMode()"><img class="darkmode-btn"
+  ng build --configuration production --base-href "https://samuelvictorol.github.io/portfolio/"  &&  ngh --dir dist/portfolio src="assets/darkmodebtn.svg" alt=""></a>
 
 
   <a (click)="navService.darkMode()"><img class="darkmode-btn" src="assets/darkmodebtn.svg" alt="botão darkmode"></a>
