@@ -33,7 +33,7 @@ export class PortfolioComponent {
   }
 
   cardUrl(cardUrl: any) {
-    if(cardUrl.includes('.com') || cardUrl.includes('.io') || cardUrl.includes('.app')){
+    if(cardUrl.includes('.com') || cardUrl.includes('.io') || cardUrl.includes('.app') || cardUrl.includes('.br') || cardUrl.includes('.org')){
       window.open(cardUrl, '_blank');
     } else if(cardUrl.includes('PUMA-Doc')){
       window.open(cardUrl, '_blank');
