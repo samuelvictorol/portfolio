@@ -44,7 +44,7 @@
 }
 
 .sobre-wrapper {
-    height: 90vh;
+    height: 170vh;
     width: 100vw;
     position: relative;
     background: #000000;  /* fallback for old browsers */
@@ -54,7 +54,6 @@
 }
 
 .container-sobre {
-    height: 95vh;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -134,6 +133,7 @@ h1::selection, p::selection {
     background-color: rgb(255, 255, 255);
     outline: none;
     border: none;
+    border-radius: 12px;
     cursor: pointer;
     padding: 1rem;
     transition: all .2s linear;
@@ -151,7 +151,6 @@ h1::selection, p::selection {
 @media (max-width: 1000px) {  
     .sobre-wrapper {
         padding-top: 4.2rem;
-        height: 97vh;
     }
 
     .container-sobre {
