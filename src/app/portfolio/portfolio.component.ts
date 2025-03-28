@@ -18,8 +18,8 @@ export class PortfolioComponent {
 
    projects = [
      { title: 'SUS - AGHU', desc: 'O Aplicativo de Gestão para Hospitais Universitários (AGHU) é um sistema de gestão hospitalar e prontuário eletrônico disponível para uso gratuito no Sistema Único de Saúde (SUS).', url: 'https://www.gov.br/ebserh/pt-br/governanca/plataformas-e-tecnologias/aghu/', img: 'assets/aghu.png', },
-     { title: 'Action Chat', desc: 'CRM para criação de Bots para WhatsApp e Telegram de modo dinâmico e automatizado. A plataforma permite que o próprio usuário crie os fluxos de conversa do bot.', url:'http://app.tanquion.pro/login', img:'assets/action.png',},
-     { title: 'Gastail Bot', desc: 'O Gastail é um bot para telegram de anotações rápidas das compras e vendas de seus criptoativos de modo interativo a fim de ter uma rápida visualização da sua carteira de câmbio pessoal guardando as  movimentações e permitindo configurar alertas. ', url: 'https://T.me/GasTail_bot', img: 'assets/gastail.jpg'},
+     { title: 'Action Chat', desc: 'CRM para criação de Bots para WhatsApp e Telegram de modo dinâmico e automatizado. A plataforma permite que o próprio usuário crie os fluxos de conversa do bot.', url:'https://app.tanquion.pro/login', img:'assets/action.png',},
+     { title: 'Gastail Bot', desc: 'O Gastail é um bot para telegram de registros de compras e vendas de seus criptoativos de modo interativo, à fim de ter uma rápida visualização da sua carteira de câmbio pessoal, guardando as  movimentações e permitindo configurar alertas. ', url: 'https://T.me/GasTail_bot', img: 'assets/gastail.jpg'},
      { title: 'Midnight Tickets', desc: 'Bilheteria Online com as menores taxas do mercado, diversas features para monitoramento de eventos e venda de ingressos personalizados utilizando a api do Mercado Pago.', url:'https://midnightickets.com', img:'assets/mid.png',},
      { title: 'Vitrine de Jóias - CAIXA', desc: 'É o ambiente virtual onde são expostos os bens que serão disponibilizados para venda e que foram dados em garantia nas operações de Penhor da CAIXA. As garantias são levadas a leilão para a recuperação do crédito concedido ao cliente tomador, todas elas, vinculadas a contratos não liquidados no prazo acordado..', url:'https://vitrinedejoias.caixa.gov.br/Paginas/default.aspx', img:'assets/sievjCaixaImg.png',},
      { title: 'Sistema de Tarifas - BASA', img:'assets/basa.png', url:"https://www.bancoamazonia.com.br/tarifas-bancarias", desc: 'Sistema de Tarifas para o Banco da Amazônia utilizando Vue3, Spring e SQL Server. Gerenciamento de pacotes de serviçoes e tarifas bancárias, desde o desenvolvimento até a integração contínua.', },
@@ -34,7 +34,7 @@ export class PortfolioComponent {
   }
 
   cardUrl(cardUrl: any) {
-    if(cardUrl.includes('.com')|| cardUrl.includes('.me') || cardUrl.includes('.io') || cardUrl.includes('.app') || cardUrl.includes('.br') || cardUrl.includes('.org')){
+    if(cardUrl.includes('.com')|| cardUrl.includes('.me') || cardUrl.includes('.io') || cardUrl.includes('.app') || cardUrl.includes('.br') || cardUrl.includes('.org') || cardUrl.includes('.pro')){
       window.open(cardUrl, '_blank');
     } else if(cardUrl.includes('PUMA-Doc')){
       window.open(cardUrl, '_blank');
